@@ -1,3 +1,5 @@
+# Install Tmux
+# sudo apt install tmux
 # Install NeoVim
 # sudo add-apt-repository ppa:neovim-ppa/stable
 # sudo apt-get update

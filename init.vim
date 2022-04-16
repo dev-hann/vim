@@ -1,4 +1,6 @@
 	let mapleader = ","
+	set splitbelow
+	set splitright
 	set nocompatible
 	set nu
 	set hlsearch
@@ -10,7 +12,7 @@
 	let g:dart_style_guide = 2
 	let g:dart_format_on_save = 1
 	let g:lsc_auto_map = v:true
-
+	let g:flutter_autoscroll = 1
 
 	call plug#begin()
 
@@ -23,21 +25,27 @@
 	Plug 'natebosch/vim-lsc-dart'
 
 	Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+	Plug 'airblade/vim-gitgutter'
+	Plug 'blueyed/vim-diminactive'
 
 	Plug 'joshdick/onedark.vim'
 	Plug 'sheerun/vim-polyglot'
+	
+	
 
 	call plug#end()
 
 
 	colorscheme onedark
 
-silent! nmap <C-b> :NERDTreeToggle<CR>
-silent! nmap <C-l> :DartFmt<CR>
-"silent! nmap <C-'> :FlutterHotReload<CR>
-silent! nmap <C-\> :vsplit<CR>
+	nnoremap <leader>fr :FlutterRun<cr>
+	nnoremap <leader>fs :FlutterSplit<cr>
+	
+	map <F2> :NERDTreeToggle<CR>
+	nmap <C-l> :DartFmt<CR>
+	nmap <C-\> :vsplit<CR>
 
-xmap <leader>a  <Plug>(coc-codeaction-selected)
-nmap <leader>a  <Plug>(coc-codeaction-selected)
+	xmap <leader>a  <Plug>(coc-codeaction-selected)
+	nmap <leader>a  <Plug>(coc-codeaction-selected)
 
-nnoremap <silent> K :call <SID>show_documentation()<CR>
+	nnoremap <silent> K :call <SID>show_documentation()<CR>
