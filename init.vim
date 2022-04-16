@@ -1,3 +1,4 @@
+	let mapleader = ","
 	set nocompatible
 	set nu
 	set hlsearch
@@ -12,6 +13,9 @@
 
 
 	call plug#begin()
+
+
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 	Plug 'dart-lang/dart-vim-plugin'
 	Plug 'thosakwe/vim-flutter'
@@ -30,5 +34,10 @@
 
 silent! nmap <C-b> :NERDTreeToggle<CR>
 silent! nmap <C-l> :DartFmt<CR>
-silent! nmap <C-'> :FlutterHotReload<CR>
+"silent! nmap <C-'> :FlutterHotReload<CR>
 silent! nmap <C-\> :vsplit<CR>
+
+xmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)
+
+nnoremap <silent> K :call <SID>show_documentation()<CR>
