@@ -1,3 +1,4 @@
+	syntax on
 	let mapleader = ","
 	set splitbelow
 	set splitright
@@ -19,14 +20,21 @@
 
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+
+	"Flutter
 	Plug 'dart-lang/dart-vim-plugin'
 	Plug 'thosakwe/vim-flutter'
 	Plug 'natebosch/vim-lsc'
 	Plug 'natebosch/vim-lsc-dart'
 
+	"Golang
+	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+	"Utils
 	Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 	Plug 'airblade/vim-gitgutter'
 	Plug 'blueyed/vim-diminactive'
+	Plug 'tpope/vim-fugitive'
 
 	Plug 'joshdick/onedark.vim'
 	Plug 'sheerun/vim-polyglot'
