@@ -40,12 +40,12 @@
 
 	nnoremap <leader>fr :FlutterRun<cr>
 	nnoremap <leader>fs :FlutterSplit<cr>
+	nnoremap <leader>fa :FlutterAttach<cr>
 	
-	map <F2> :NERDTreeToggle<CR>
-	nmap <C-l> :DartFmt<CR>
-	nmap <C-\> :vsplit<CR>
+	nnoremap <F2> :NERDTreeToggle<CR>
+	nnoremap <C-l> :DartFmt<CR>
+	nnoremap <C-\> :vsplit<CR>
 
 	xmap <leader>a  <Plug>(coc-codeaction-selected)
 	nmap <leader>a  <Plug>(coc-codeaction-selected)
 
-	nnoremap <silent> K :call <SID>show_documentation()<CR>
