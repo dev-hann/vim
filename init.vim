@@ -55,8 +55,9 @@
 
 
 	"colorscheme onedark
-	colorscheme gruvbox
-
+	let g:gruvbox_contrast_dark='hard'
+	 colorscheme gruvbox
+   
 	" FlutterMap
 	nnoremap <leader>fr :FlutterRun<cr>
 	nnoremap <leader>fs :FlutterSplit<cr>
