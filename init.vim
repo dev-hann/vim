@@ -45,7 +45,8 @@
 	Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
 	"Theme
-	Plug 'joshdick/onedark.vim'
+	"Plug 'joshdick/onedark.vim'
+	Plug 'morhetz/gruvbox'
 	Plug 'sheerun/vim-polyglot'
 	
 	
@@ -53,7 +54,8 @@
 	call plug#end()
 
 
-	colorscheme onedark
+	"colorscheme onedark
+	colorscheme gruvbox
 
 	" FlutterMap
 	nnoremap <leader>fr :FlutterRun<cr>
