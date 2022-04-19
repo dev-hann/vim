@@ -70,6 +70,7 @@
 	" UtillMap
 	nnoremap <F2> :NERDTreeToggle<CR>
 	nnoremap <F3> <Plug>NERDCommenterToggle<CR>
+	nmap <F6> <Plug>(coc-rename)
 	
 	nnoremap <C-\> :vsplit<CR>
 
