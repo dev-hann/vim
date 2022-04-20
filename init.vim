@@ -21,6 +21,7 @@
 
 	"Flutter
 	Plug 'dart-lang/dart-vim-plugin'
+	Plug 'thosakwe/vim-flutter'
 
 	"Golang
 	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
@@ -29,7 +30,8 @@
 	Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 	Plug 'preservim/nerdcommenter'
 	Plug 'blueyed/vim-diminactive'
-	
+	Plug 'jiangmiao/auto-pairs'
+
 	"Theme
 	"Plug 'morhetz/gruvbox'
 	Plug 'lifepillar/vim-gruvbox8'
@@ -38,16 +40,28 @@
 	
 
 	call plug#end()
+:
 
-
-	 colorscheme gruvbox8_hard
+	colorscheme gruvbox8_hard
    
+
+	" Coc
+	nmap <silent> gd <Plug>(coc-definition)
+	nmap <silent> gy <Plug>(coc-type-definition)
+	nmap <silent> gi <Plug>(coc-implementation)
+	nmap <silent> gr <Plug>(coc-references)
+
+
 	" FlutterMap
 	nnoremap <leader>fr :FlutterRun<cr>
 	nnoremap <leader>fs :FlutterSplit<cr>
 	nnoremap <leader>fa :FlutterAttach<cr>
+	nnoremap <leader>fp :CocCommand flutter.pub.get<cr>
+	
 	nnoremap <leader>df :DartFmt<CR>
-	"
+	xmap <leader>a  <Plug>(coc-codeaction-selected)
+	nmap <leader>a  <Plug>(coc-codeaction-selected)
+	
 	" GoMap
 	nnoremap <leader>gf :GoFmt<CR>
 	
@@ -58,8 +72,6 @@
 	
 	nnoremap <C-\> :vsplit<CR>
 
-	xmap <leader>a  <Plug>(coc-codeaction-selected)
-	nmap <leader>a  <Plug>(coc-codeaction-selected)
 
 
 
