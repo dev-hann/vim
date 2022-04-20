@@ -13,22 +13,14 @@
 	set smartindent
 
 
-	let g:dart_style_guide = 2
-	let g:dart_format_on_save = 1
-	let g:lsc_auto_map = v:true
-	let g:flutter_autoscroll = 1
 
 	call plug#begin()
 
-
+	"Coc
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 
 	"Flutter
 	Plug 'dart-lang/dart-vim-plugin'
-	Plug 'thosakwe/vim-flutter'
-	Plug 'natebosch/vim-lsc'
-	Plug 'natebosch/vim-lsc-dart'
 
 	"Golang
 	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
@@ -36,18 +28,11 @@
 	"Utils
 	Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 	Plug 'preservim/nerdcommenter'
-	Plug 'airblade/vim-gitgutter'
 	Plug 'blueyed/vim-diminactive'
-	Plug 'tpope/vim-fugitive'
-	Plug 'prabirshrestha/async.vim'
-	Plug 'prabirshrestha/vim-lsp'
-	Plug 'prabirshrestha/asyncomplete.vim'
-	Plug 'prabirshrestha/asyncomplete-lsp.vim'
-	Plugin 'nathanaelkane/vim-indent-guides'
 	
 	"Theme
-	"Plug 'joshdick/onedark.vim'
-	Plug 'morhetz/gruvbox'
+	"Plug 'morhetz/gruvbox'
+	Plug 'lifepillar/vim-gruvbox8'
 	Plug 'sheerun/vim-polyglot'
 	
 	
@@ -55,9 +40,7 @@
 	call plug#end()
 
 
-	"colorscheme onedark
-	let g:gruvbox_contrast_dark='hard'
-	 colorscheme gruvbox
+	 colorscheme gruvbox8_hard
    
 	" FlutterMap
 	nnoremap <leader>fr :FlutterRun<cr>
@@ -112,5 +95,9 @@
 	let g:NERDTrimTrailingWhitespace = 1
 	let g:NERDToggleCheckAllLines = 1
 
-	"Indent
-	let g:indent_guides_enable_on_vim_startup = 1
+	"Dart
+	let g:dart_style_guide = 2
+	
+	"Flutter
+	let g:flutter_autoscroll = 1
+	
