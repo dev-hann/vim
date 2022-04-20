@@ -43,7 +43,8 @@
 	Plug 'prabirshrestha/vim-lsp'
 	Plug 'prabirshrestha/asyncomplete.vim'
 	Plug 'prabirshrestha/asyncomplete-lsp.vim'
-
+	Plugin 'nathanaelkane/vim-indent-guides'
+	
 	"Theme
 	"Plug 'joshdick/onedark.vim'
 	Plug 'morhetz/gruvbox'
@@ -79,17 +80,17 @@
 
 
 
-  augroup LspGo
-  au!
-  autocmd User lsp_setup call lsp#register_server({
-      \ 'name': 'go-lang',
-      \ 'cmd': {server_info->['gopls']},
-      \ 'whitelist': ['go'],
-      \ })
-  autocmd FileType go setlocal omnifunc=lsp#complete
-  "autocmd FileType go nmap <buffer> gd <plug>(lsp-definition)
-  "autocmd FileType go nmap <buffer> ,n <plug>(lsp-next-error)
-  "autocmd FileType go nmap <buffer> ,p <plug>(lsp-previous-error)
+	augroup LspGo
+	au!
+  	autocmd User lsp_setup call lsp#register_server({
+    	\ 'name': 'go-lang',
+    	\ 'cmd': {server_info->['gopls']},
+    	\ 'whitelist': ['go'],
+    	\ })
+	autocmd FileType go setlocal omnifunc=lsp#complete
+	"autocmd FileType go nmap <buffer> gd <plug>(lsp-definition)
+	"autocmd FileType go nmap <buffer> ,n <plug>(lsp-next-error)
+	"autocmd FileType go nmap <buffer> ,p <plug>(lsp-previous-error)
 	augroup END
 	
 	let g:go_highlight_operators = 1
@@ -102,13 +103,14 @@
 	let g:go_highlight_variable_declarations = 1
 	let g:go_highlight_variable_assignments = 1
 
-  "Comment
-let g:NERDCreateDefaultMappings = 1
-let g:NERDSpaceDelims = 1
-let g:NERDCompactSexyComs = 1
-let g:NERDDefaultAlign = 'left'
-let g:NERDCommentEmptyLines = 1
-let g:NERDTrimTrailingWhitespace = 1
-let g:NERDToggleCheckAllLines = 1
+	"Comment
+	let g:NERDCreateDefaultMappings = 1
+	let g:NERDSpaceDelims = 1
+	let g:NERDCompactSexyComs = 1
+	let g:NERDDefaultAlign = 'left'
+	let g:NERDCommentEmptyLines = 1
+	let g:NERDTrimTrailingWhitespace = 1
+	let g:NERDToggleCheckAllLines = 1
 
-
+	"Indent
+	let g:indent_guides_enable_on_vim_startup = 1
