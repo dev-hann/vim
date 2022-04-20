@@ -45,27 +45,27 @@
 	colorscheme gruvbox8_hard
    
 
-	" Coc
+	"Coc
 	nmap <silent> gd <Plug>(coc-definition)
 	nmap <silent> gy <Plug>(coc-type-definition)
 	nmap <silent> gi <Plug>(coc-implementation)
 	nmap <silent> gr <Plug>(coc-references)
+	xmap <leader>a  <Plug>(coc-codeaction-selected)
+	nmap <leader>a  <Plug>(coc-codeaction-selected)
+	inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+	inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-
-	" FlutterMap
+	"Flutter
 	nnoremap <leader>fr :FlutterRun<cr>
 	nnoremap <leader>fs :FlutterSplit<cr>
 	nnoremap <leader>fa :FlutterAttach<cr>
 	nnoremap <leader>fp :CocCommand flutter.pub.get<cr>
-	
 	nnoremap <leader>df :DartFmt<CR>
-	xmap <leader>a  <Plug>(coc-codeaction-selected)
-	nmap <leader>a  <Plug>(coc-codeaction-selected)
 	
-	" GoMap
+	"Go
 	nnoremap <leader>gf :GoFmt<CR>
 	
-	" UtillMap
+	"Utill
 	nnoremap <F2> :NERDTreeToggle<CR>
 	nnoremap <F3> <Plug>NERDCommenterToggle<CR>
 	nmap <F6> <Plug>(coc-rename)
@@ -73,21 +73,7 @@
 	nnoremap <C-\> :vsplit<CR>
 
 
-
-
-	augroup LspGo
-	au!
-  	autocmd User lsp_setup call lsp#register_server({
-    	\ 'name': 'go-lang',
-    	\ 'cmd': {server_info->['gopls']},
-    	\ 'whitelist': ['go'],
-    	\ })
-	autocmd FileType go setlocal omnifunc=lsp#complete
-	"autocmd FileType go nmap <buffer> gd <plug>(lsp-definition)
-	"autocmd FileType go nmap <buffer> ,n <plug>(lsp-next-error)
-	"autocmd FileType go nmap <buffer> ,p <plug>(lsp-previous-error)
-	augroup END
-	
+	"Go
 	let g:go_highlight_operators = 1
 	let g:go_highlight_functions = 1
 	let g:go_highlight_function_parameters = 1
