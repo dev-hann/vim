@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -i
 # Update system
 sudo apt-get -y update 
 sudo apt-get -y upgrade
@@ -10,8 +10,7 @@ sudo apt-get -y install neovim
 
 # Install Nvm
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
-NVM_DIR=$HOME/.nvm;
-source $NVM_DIR/nvm.sh;
+source ~/.bashrc
 nvm install --lts
 
 # Install Plug-vim
