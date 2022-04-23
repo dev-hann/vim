@@ -31,7 +31,7 @@
 	Plug 'preservim/nerdcommenter'
 	Plug 'blueyed/vim-diminactive'
 	Plug 'jiangmiao/auto-pairs'
-
+	Plug 'tpope/vim-fugitive'
 	"Theme
 	"Plug 'morhetz/gruvbox'
 	Plug 'lifepillar/vim-gruvbox8'
