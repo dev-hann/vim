@@ -1,6 +1,8 @@
 	syntax on
 	filetype plugin on
 	let mapleader = ","
+	set cursorline
+	set encoding=utf-8
 	set splitbelow
 	set splitright
 	set nocompatible
@@ -11,7 +13,8 @@
 	set sw=3
 	set autoindent
 	set smartindent
-
+	set autowrite
+	set paste
 
 
 	call plug#begin()
@@ -32,8 +35,12 @@
 	Plug 'blueyed/vim-diminactive'
 	Plug 'jiangmiao/auto-pairs'
 	Plug 'tpope/vim-fugitive'
+	Plug 'vim-airline/vim-airline'
+	Plug 'vim-airline/vim-airline-themes'
+	Plug 'preservim/tagbar'
+	Plug 'Konfekt/FastFold'
+
 	"Theme
-	"Plug 'morhetz/gruvbox'
 	Plug 'lifepillar/vim-gruvbox8'
 	Plug 'sheerun/vim-polyglot'
 	
@@ -43,7 +50,7 @@
 
 
 	colorscheme gruvbox8_hard
-   
+   let g:airline_theme='simple'
 
 	"Coc
 	nmap <silent> gd <Plug>(coc-definition)
@@ -69,9 +76,10 @@
 	nnoremap <F2> :NERDTreeToggle<CR>
 	nnoremap <F3> <Plug>NERDCommenterToggle<CR>
 	nmap <F6> <Plug>(coc-rename)
+	nmap <F8> :TagbarToggle<CR>
 	
 	nnoremap <C-\> :vsplit<CR>
-
+	
 
 	"Go
 	let g:go_highlight_operators = 1
@@ -99,7 +107,7 @@
 	"Flutter
 	let g:flutter_autoscroll = 1
 	
-
+	"foramt
 	nnoremap <C-M-l> :call Format()<CR>
 	function! Format()
 		let ext = expand('%:e')
@@ -110,3 +118,9 @@
 			call go#fmt#Format(-1)
 		endif
 	endfunction
+	
+	"fold
+	autocmd FileType go,dart setlocal foldmethod=syntax
+
+	"tagbar
+	let g:tagbar_type_dart = { 'ctagsbin': '~/.pub-cache/bin/dart_ctags' }
