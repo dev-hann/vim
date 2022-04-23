@@ -5,6 +5,9 @@ sudo apt-get -y upgrade
 
 # Install Tmux
 sudo apt install tmux
+
+cp ./.tmux.config ~/
+
 # Install NeoVim
 sudo apt-get -y install neovim
 
@@ -20,3 +23,5 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 VIM_DIR=~/.config/nvim
 mkdir -p "$VIM_DIR"
 cp init.vim "$VIM_DIR"/
+
+
