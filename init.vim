@@ -40,7 +40,7 @@
 	
 
 	call plug#end()
-:
+
 
 	colorscheme gruvbox8_hard
    
@@ -99,3 +99,14 @@
 	"Flutter
 	let g:flutter_autoscroll = 1
 	
+
+	nnoremap <C-M-l> :call Format()<CR>
+	function! Format()
+		let ext = expand('%:e')
+		if ext=='dart'
+			call dart#fmt()
+		endif
+		if ext=='go'
+			call go#fmt#Format(-1)
+		endif
+	endfunction
