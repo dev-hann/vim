@@ -13,8 +13,6 @@
 	set sw=3
 	set autoindent
 	set smartindent
-	set autowrite
-	set paste
 
 
 	call plug#begin()
