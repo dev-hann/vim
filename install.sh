@@ -6,9 +6,9 @@ sudo apt-get -y upgrade
 # Install Tmux
 sudo apt install tmux
 
-cp .tmux.config ~/
+cp .tmux.conf ~/
 # Tmux ide split Screen
-cp ide /usr/bin/
+sudo cp ide /usr/bin/
 
 # Install NeoVim
 sudo apt-get -y install neovim
