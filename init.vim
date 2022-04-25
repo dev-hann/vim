@@ -38,7 +38,6 @@
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'preservim/tagbar'
-	Plug 'Konfekt/FastFold'
 
 	"Theme
 	Plug 'lifepillar/vim-gruvbox8'
@@ -79,7 +78,10 @@
 	nmap <F8> :TagbarToggle<CR>
 	
 	nnoremap <C-\> :vsplit<CR>
-	
+	"Folding
+	:set foldmethod=indent
+	:set foldlevel=2
+
 
 	"Go
 	let g:go_highlight_operators = 1
@@ -119,8 +121,5 @@
 		endif
 	endfunction
 	
-	"fold
-	autocmd FileType go,dart setlocal foldmethod=syntax
-
 	"tagbar
 	let g:tagbar_type_dart = { 'ctagsbin': '~/.pub-cache/bin/dart_ctags' }
