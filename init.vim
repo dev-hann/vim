@@ -35,6 +35,7 @@
 	Plug 'tpope/vim-fugitive'
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
+	Plug 'mg979/vim-visual-multi'
 	" Plug 'preservim/tagbar'
 	Plug 'yoehwan/tagbar'
 	"Theme
