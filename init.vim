@@ -35,8 +35,8 @@
 	Plug 'tpope/vim-fugitive'
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
-	Plug 'preservim/tagbar'
-
+	" Plug 'preservim/tagbar'
+	Plug 'yoehwan/tagbar'
 	"Theme
 	Plug 'lifepillar/vim-gruvbox8'
 	Plug 'sheerun/vim-polyglot'
@@ -78,7 +78,7 @@
 	nnoremap <C-\> :vsplit<CR>
 	"Folding
 	:set foldmethod=indent
-	:set foldlevel=2
+	:set foldlevel=10
 
 
 	"Go
@@ -120,4 +120,5 @@
 	endfunction
 	
 	"tagbar
-	let g:tagbar_type_dart = { 'ctagsbin': '~/.pub-cache/bin/dart_ctags' }
+	" let g:tagbar_type_dart = { 'ctagsbin': '~/.pub-cache/bin/dart_ctags' }
+	" let g:tagbar_type_dart = { 'ctagsbin': '/mnt/D/flutter_project/dart-ctags/bin/dart_ctags' }
