@@ -1,5 +1,6 @@
 #!/bin/bash -i
 # Update system
+sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get -y update 
 sudo apt-get -y upgrade
 sudo apt-get -y install ctags
