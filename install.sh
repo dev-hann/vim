@@ -2,6 +2,7 @@
 # Update system
 sudo apt-get -y update 
 sudo apt-get -y upgrade
+sudo apt-get -y install ctags
 
 # Install Tmux
 sudo apt install tmux
