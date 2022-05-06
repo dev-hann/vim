@@ -28,7 +28,7 @@
 	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 	"Utils
-	Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+	Plug 'scrooloose/nerdtree'	
 	Plug 'preservim/nerdcommenter'
 	Plug 'blueyed/vim-diminactive'
 	Plug 'jiangmiao/auto-pairs'
