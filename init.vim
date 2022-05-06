@@ -36,6 +36,7 @@
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'mg979/vim-visual-multi'
+	 
 	" Plug 'preservim/tagbar'
 	Plug 'yoehwan/tagbar'
 	"Theme
@@ -120,6 +121,3 @@
 		endif
 	endfunction
 	
-	"tagbar
-	" let g:tagbar_type_dart = { 'ctagsbin': '~/.pub-cache/bin/dart_ctags' }
-	" let g:tagbar_type_dart = { 'ctagsbin': '/mnt/D/flutter_project/dart-ctags/bin/dart_ctags' }
