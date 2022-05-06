@@ -28,5 +28,5 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 VIM_DIR=~/.config/nvim
 mkdir -p "$VIM_DIR"
 cp -a ./ "$VIM_DIR"/
-
+echo alias vi="nvim">>~/.bashrc
 
