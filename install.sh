@@ -3,14 +3,15 @@
 sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get -y update 
 sudo apt-get -y upgrade
+
+# Install Ctags
 sudo apt-get -y install ctags
 
 # Install Tmux
 sudo apt install tmux
-
 cp .tmux.conf ~/
 # Tmux ide split Screen
-sudo cp ide /usr/bin/
+sudo mv ide /usr/bin/
 
 # Install NeoVim
 sudo apt-get -y install neovim
@@ -26,6 +27,6 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 VIM_DIR=~/.config/nvim
 mkdir -p "$VIM_DIR"
-cp init.vim "$VIM_DIR"/
+cp -a ./ "$VIM_DIR"/
 
 
