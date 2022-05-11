@@ -15,6 +15,12 @@
 	set smartindent
 
 
+	
+	let extension = expand('%:e')
+		if extension=='dart'
+			set cc=80
+		endif
+
 	call plug#begin()
 
 	"Coc
@@ -36,7 +42,8 @@
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'mg979/vim-visual-multi'
-
+	Plug 'junegunn/fzf',{'do':{->fzf#install()}}
+	Plug 'junegunn/fzf.vim'
 	" Plug 'preservim/tagbar'
 	Plug 'yoehwan/tagbar'
 	"Theme
@@ -112,11 +119,10 @@
 	"foramt
 	nnoremap <C-M-l> :call Format()<CR>
 	function! Format()
-		let ext = expand('%:e')
-		if ext=='dart'
+		if extension=='dart'
 			call dart#fmt()
 		endif
-		if ext=='go'
+		if extension=='go'
 			call go#fmt#Format(-1)
 		endif
 	endfunction
