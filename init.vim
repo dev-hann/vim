@@ -119,6 +119,7 @@
 	"foramt
 	nnoremap <C-M-l> :call Format()<CR>
 	function! Format()
+	let extension = expand('%:e')
 		if extension=='dart'
 			call dart#fmt()
 		endif
