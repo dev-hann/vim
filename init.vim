@@ -44,6 +44,7 @@
 	Plug 'mg979/vim-visual-multi'
 	Plug 'junegunn/fzf',{'do':{->fzf#install()}}
 	Plug 'junegunn/fzf.vim'
+
 	" Plug 'preservim/tagbar'
 	Plug 'yoehwan/tagbar'
 	"Theme
