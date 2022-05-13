@@ -1,0 +1,396 @@
+
+
+NVIM v0.8.0-dev
+Build type: RelWithDebInfo
+LuaJIT 2.1.0-beta3
+Compilation: /usr/bin/cc -g -O2 -fdebug-prefix-map=/build/neovim-zWY8gB/neovim-0.7.0~ubuntu1+git202205051518-82c7a82c3-dd05b3569=. -fstack-protector-strong -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1 -DNVIM_TS_HAS_SET_MATCH_LIMIT -DNVIM_TS_HAS_SET_ALLOCATOR -O2 -g -Og -g -Wall -Wextra -pedantic -Wno-unused-parameter -Wstrict-prototypes -std=gnu99 -Wshadow -Wconversion -Wdouble-promotion -Wmissing-noreturn -Wmissing-format-attribute -Wmissing-prototypes -Wimplicit-fallthrough -Wsuggest-attribute=pure -Wsuggest-attribute=const -Wsuggest-attribute=malloc -Wsuggest-attribute=cold -Wvla -fstack-protector-strong -fno-common -fdiagnostics-color=auto -DINCLUDE_GENERATED_DECLARATIONS -D_GNU_SOURCE -DNVIM_MSGPACK_HAS_FLOAT32 -DNVIM_UNIBI_HAS_VAR_FROM -DMIN_LOG_LEVEL=3 -I/build/neovim-zWY8gB/neovim-0.7.0~ubuntu1+git202205051518-82c7a82c3-dd05b3569/build/config -I/build/neovim-zWY8gB/neovim-0.7.0~ubuntu1+git202205051518-82c7a82c3-dd05b3569/src -I/build/neovim-zWY8gB/neovim-0.7.0~ubuntu1+git202205051518-82c7a82c3-dd05b3569/.deps/usr/include -I/usr/include -I/build/neovim-zWY8gB/neovim-0.7.0~ubuntu1+git202205051518-82c7a82c3-dd05b3569/build/src/nvim/auto -I/build/neovim-zWY8gB/neovim-0.7.0~ubuntu1+git202205051518-82c7a82c3-dd05b3569/build/include
+Compiled by buildd@lgw01-amd64-011
+
+Features: +acl +iconv +tui
+See ":help feature-compile"
+
+   system vimrc file: "$VIM/sysinit.vim"
+  fall-back for $VIM: "/usr/share/nvim"
+
+Run :checkhealth for more info1970-01-02 05:02:41.339966: AutoUpdate called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:41.340117: Vim filetype: 'dart', sanitized filetype: 'dart'
+1970-01-02 05:02:41.340181: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:41.340341: File data outdated, updating [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:41.340403: ProcessFile called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:41.340461: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:41.341210: typeinfo for file to process: {'ctagstype': 'dart', 'ftype': 'dart', 'kinddict': {'C': 8, 'D': 3, 'E': 11, 'F': 10, 'L': 5, 'M': 23, 'P': 6, 'U': 4, 'a': 20, 'c': 14, 'd': 15, 'e': 12, 'f': 21, 'g': 24, 'i': 2, 'l': 0, 'm': 22, 'n': 18, 'o': 26, 'p': 7, 'r': 19, 's': 25, 't': 1, 'v': 9, 'w': 16, 'x': 13, 'z': 17, '?': 27}, 'ctagsargs': '-l', 'sro': ':', 'createKinddict': function('<SNR>112_createKinddict'), 'getKind': function('<SNR>112_getKind'), 'kind2scope': {'c': 'class', 'E': 'enum', 'x': 'mixin', 'i': 'directive', '?': 'unknown'}, 'ctagsbin': 'dart_ctags', 'scope2kind': {'enum': 'E', 'class': 'c', 'directive': 'i', 'mixin': 'x'}, 'kinds': [{'short': 'l', 'long': 'library', 'fold': 0, 'stl': 0}, {'short': 't', 'long': 'export', 'fold': 0, 'stl': 0}, {'short': 'i', 'long': 'imports', 'fold': 1, 'stl': 0}, {'short': 'D', 'long': 'dart', 'fold': 0, 'stl': 0}, {'short': 'U', 'long': 'pub', 'fold': 0, 'stl': 0}, {'short': 'L', 'long': 'local', 'fold': 0, 'stl': 0}, {'short': 'P', 'long': 'part', 'fold': 0, 'stl': 0}, {'short': 'p', 'long': 'part of', 'fold': 0, 'stl': 0}, {'short': 'C', 'long': 'consts', 'fold': 0, 'stl': 0}, {'short': 'v', 'long': 'variables', 'fold': 0, 'stl': 0}, {'short': 'F', 'long': 'functions', 'fold': 0, 'stl': 0}, {'short': 'E', 'long': 'enums', 'fold': 0, 'stl': 0}, {'short': 'e', 'long': 'constants', 'fold': 0, 'stl': 0}, {'short': 'x', 'long': 'mixins', 'fold': 0, 'stl': 0}, {'short': 'c', 'long': 'classes', 'fold': 0, 'stl': 0}, {'short': 'd', 'long': 'extends', 'fold': 0, 'stl': 0}, {'short': 'w', 'long': 'with', 'fold': 0, 'stl': 0}, {'short': 'z', 'long': 'implements', 'fold': 0, 'stl': 0}, {'short': 'n', 'long': 'on', 'fold': 0, 'stl': 0}, {'short': 'r', 'long': 'constructors', 'fold': 0, 'stl': 0}, {'short': 'a', 'long': 'abstract functions', 'fold': 0, 'stl': 0}, {'short': 'f', 'long': 'fields', 'fold': 0, 'stl': 0}, {'short': 'm', 'long': 'methods', 'fold': 0, 'stl': 0}, {'short': 'M', 'long': 'static methods', 'fold': 0, 'stl': 0}, {'short': 'g', 'long': 'getters', 'fold': 0, 'stl': 0}, {'short': 's', 'long': 'setters', 'fold': 0, 'stl': 0}, {'short': 'o', 'long': 'operators', 'fold': 0, 'stl': 0}, {'short': '?', 'long': 'unknown', 'fold': 0, 'stl': 1}]}
+1970-01-02 05:02:41.341419: Caching file into: /tmp/nvimeRRN7Z/3.dart
+1970-01-02 05:02:41.341564: ExecuteCtagsOnFile called [/tmp/nvimeRRN7Z/3.dart]
+1970-01-02 05:02:41.341756: EscapeCtagsCmd called
+1970-01-02 05:02:41.341827: ctags_bin: dart_ctags
+1970-01-02 05:02:41.341889: ctags_args (is a string):  -l 
+1970-01-02 05:02:41.342052: Escaped ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/3.dart'
+1970-01-02 05:02:41.342138: Executing ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/3.dart'
+1970-01-02 05:02:41.637087: Executing command: "'/bin/bash' '-c' ''dart_ctags'  -l  '/tmp/nvimeRRN7Z/3.dart''"
+1970-01-02 05:02:41.637169: Exit code: 66
+1970-01-02 05:02:41.639585: Command output:
+1970-01-02 05:02:41.639634: Could not find a file named "pubspec.yaml" in "/home/han/.config/nvim/dart-ctags".
+
+1970-01-02 05:02:41.639677: Exit code: 66
+1970-01-02 05:02:41.639791: Ctags error when processing file
+1970-01-02 05:02:41.639900: fileinfo empty after processing [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:43.079000: AutoUpdate called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:43.079442: Vim filetype: 'dart', sanitized filetype: 'dart'
+1970-01-02 05:02:43.079676: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:43.080266: File data outdated, updating [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:43.080485: ProcessFile called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:43.080693: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:43.083188: typeinfo for file to process: {'ctagstype': 'dart', 'ftype': 'dart', 'kinddict': {'C': 8, 'D': 3, 'E': 11, 'F': 10, 'L': 5, 'M': 23, 'P': 6, 'U': 4, 'a': 20, 'c': 14, 'd': 15, 'e': 12, 'f': 21, 'g': 24, 'i': 2, 'l': 0, 'm': 22, 'n': 18, 'o': 26, 'p': 7, 'r': 19, 's': 25, 't': 1, 'v': 9, 'w': 16, 'x': 13, 'z': 17, '?': 27}, 'ctagsargs': '-l', 'sro': ':', 'createKinddict': function('<SNR>112_createKinddict'), 'getKind': function('<SNR>112_getKind'), 'kind2scope': {'c': 'class', 'E': 'enum', 'x': 'mixin', 'i': 'directive', '?': 'unknown'}, 'ctagsbin': 'dart_ctags', 'scope2kind': {'enum': 'E', 'class': 'c', 'directive': 'i', 'mixin': 'x'}, 'kinds': [{'short': 'l', 'long': 'library', 'fold': 0, 'stl': 0}, {'short': 't', 'long': 'export', 'fold': 0, 'stl': 0}, {'short': 'i', 'long': 'imports', 'fold': 1, 'stl': 0}, {'short': 'D', 'long': 'dart', 'fold': 0, 'stl': 0}, {'short': 'U', 'long': 'pub', 'fold': 0, 'stl': 0}, {'short': 'L', 'long': 'local', 'fold': 0, 'stl': 0}, {'short': 'P', 'long': 'part', 'fold': 0, 'stl': 0}, {'short': 'p', 'long': 'part of', 'fold': 0, 'stl': 0}, {'short': 'C', 'long': 'consts', 'fold': 0, 'stl': 0}, {'short': 'v', 'long': 'variables', 'fold': 0, 'stl': 0}, {'short': 'F', 'long': 'functions', 'fold': 0, 'stl': 0}, {'short': 'E', 'long': 'enums', 'fold': 0, 'stl': 0}, {'short': 'e', 'long': 'constants', 'fold': 0, 'stl': 0}, {'short': 'x', 'long': 'mixins', 'fold': 0, 'stl': 0}, {'short': 'c', 'long': 'classes', 'fold': 0, 'stl': 0}, {'short': 'd', 'long': 'extends', 'fold': 0, 'stl': 0}, {'short': 'w', 'long': 'with', 'fold': 0, 'stl': 0}, {'short': 'z', 'long': 'implements', 'fold': 0, 'stl': 0}, {'short': 'n', 'long': 'on', 'fold': 0, 'stl': 0}, {'short': 'r', 'long': 'constructors', 'fold': 0, 'stl': 0}, {'short': 'a', 'long': 'abstract functions', 'fold': 0, 'stl': 0}, {'short': 'f', 'long': 'fields', 'fold': 0, 'stl': 0}, {'short': 'm', 'long': 'methods', 'fold': 0, 'stl': 0}, {'short': 'M', 'long': 'static methods', 'fold': 0, 'stl': 0}, {'short': 'g', 'long': 'getters', 'fold': 0, 'stl': 0}, {'short': 's', 'long': 'setters', 'fold': 0, 'stl': 0}, {'short': 'o', 'long': 'operators', 'fold': 0, 'stl': 0}, {'short': '?', 'long': 'unknown', 'fold': 0, 'stl': 1}]}
+1970-01-02 05:02:43.083840: Caching file into: /tmp/nvimeRRN7Z/4.dart
+1970-01-02 05:02:43.084282: ExecuteCtagsOnFile called [/tmp/nvimeRRN7Z/4.dart]
+1970-01-02 05:02:43.084797: EscapeCtagsCmd called
+1970-01-02 05:02:43.084865: ctags_bin: dart_ctags
+1970-01-02 05:02:43.084931: ctags_args (is a string):  -l 
+1970-01-02 05:02:43.085088: Escaped ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/4.dart'
+1970-01-02 05:02:43.085168: Executing ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/4.dart'
+1970-01-02 05:02:43.323224: Executing command: "'/bin/bash' '-c' ''dart_ctags'  -l  '/tmp/nvimeRRN7Z/4.dart''"
+1970-01-02 05:02:43.323302: Exit code: 66
+1970-01-02 05:02:43.325303: Command output:
+1970-01-02 05:02:43.325374: Could not find a file named "pubspec.yaml" in "/home/han/.config/nvim/dart-ctags".
+
+1970-01-02 05:02:43.325429: Exit code: 66
+1970-01-02 05:02:43.325543: Ctags error when processing file
+1970-01-02 05:02:43.325647: fileinfo empty after processing [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:43.721101: ToggleWindow called
+1970-01-02 05:02:43.721253: OpenWindow called with flags: ''
+1970-01-02 05:02:43.742775: AutoUpdate called [/home/han/.config/nvim/__Tagbar__.1]
+1970-01-02 05:02:43.742838: Still opening window, stopping processing
+1970-01-02 05:02:43.748350: AutoUpdate called [/home/han/.config/nvim/__Tagbar__.1]
+1970-01-02 05:02:43.748426: Still opening window, stopping processing
+1970-01-02 05:02:43.748692: InitWindow called with autoclose: 0
+1970-01-02 05:02:43.759258: AutoUpdate called [/home/han/.config/nvim/__Tagbar__.1]
+1970-01-02 05:02:43.759371: In Tagbar window, stopping processing
+1970-01-02 05:02:43.761670: Mapping keys
+1970-01-02 05:02:43.762644: InitWindow finished
+1970-01-02 05:02:43.762760: Removing fileinfo for [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:43.762825: AutoUpdate called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:43.762926: Vim filetype: 'dart', sanitized filetype: 'dart'
+1970-01-02 05:02:43.762965: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:43.763075: New file, processing [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:43.763115: ProcessFile called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:43.763153: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:43.763625: typeinfo for file to process: {'ctagstype': 'dart', 'ftype': 'dart', 'kinddict': {'C': 8, 'D': 3, 'E': 11, 'F': 10, 'L': 5, 'M': 23, 'P': 6, 'U': 4, 'a': 20, 'c': 14, 'd': 15, 'e': 12, 'f': 21, 'g': 24, 'i': 2, 'l': 0, 'm': 22, 'n': 18, 'o': 26, 'p': 7, 'r': 19, 's': 25, 't': 1, 'v': 9, 'w': 16, 'x': 13, 'z': 17, '?': 27}, 'ctagsargs': '-l', 'sro': ':', 'createKinddict': function('<SNR>112_createKinddict'), 'getKind': function('<SNR>112_getKind'), 'kind2scope': {'c': 'class', 'E': 'enum', 'x': 'mixin', 'i': 'directive', '?': 'unknown'}, 'ctagsbin': 'dart_ctags', 'scope2kind': {'enum': 'E', 'class': 'c', 'directive': 'i', 'mixin': 'x'}, 'kinds': [{'short': 'l', 'long': 'library', 'fold': 0, 'stl': 0}, {'short': 't', 'long': 'export', 'fold': 0, 'stl': 0}, {'short': 'i', 'long': 'imports', 'fold': 1, 'stl': 0}, {'short': 'D', 'long': 'dart', 'fold': 0, 'stl': 0}, {'short': 'U', 'long': 'pub', 'fold': 0, 'stl': 0}, {'short': 'L', 'long': 'local', 'fold': 0, 'stl': 0}, {'short': 'P', 'long': 'part', 'fold': 0, 'stl': 0}, {'short': 'p', 'long': 'part of', 'fold': 0, 'stl': 0}, {'short': 'C', 'long': 'consts', 'fold': 0, 'stl': 0}, {'short': 'v', 'long': 'variables', 'fold': 0, 'stl': 0}, {'short': 'F', 'long': 'functions', 'fold': 0, 'stl': 0}, {'short': 'E', 'long': 'enums', 'fold': 0, 'stl': 0}, {'short': 'e', 'long': 'constants', 'fold': 0, 'stl': 0}, {'short': 'x', 'long': 'mixins', 'fold': 0, 'stl': 0}, {'short': 'c', 'long': 'classes', 'fold': 0, 'stl': 0}, {'short': 'd', 'long': 'extends', 'fold': 0, 'stl': 0}, {'short': 'w', 'long': 'with', 'fold': 0, 'stl': 0}, {'short': 'z', 'long': 'implements', 'fold': 0, 'stl': 0}, {'short': 'n', 'long': 'on', 'fold': 0, 'stl': 0}, {'short': 'r', 'long': 'constructors', 'fold': 0, 'stl': 0}, {'short': 'a', 'long': 'abstract functions', 'fold': 0, 'stl': 0}, {'short': 'f', 'long': 'fields', 'fold': 0, 'stl': 0}, {'short': 'm', 'long': 'methods', 'fold': 0, 'stl': 0}, {'short': 'M', 'long': 'static methods', 'fold': 0, 'stl': 0}, {'short': 'g', 'long': 'getters', 'fold': 0, 'stl': 0}, {'short': 's', 'long': 'setters', 'fold': 0, 'stl': 0}, {'short': 'o', 'long': 'operators', 'fold': 0, 'stl': 0}, {'short': '?', 'long': 'unknown', 'fold': 0, 'stl': 1}]}
+1970-01-02 05:02:43.763773: Caching file into: /tmp/nvimeRRN7Z/6.dart
+1970-01-02 05:02:43.763862: ExecuteCtagsOnFile called [/tmp/nvimeRRN7Z/6.dart]
+1970-01-02 05:02:43.763976: EscapeCtagsCmd called
+1970-01-02 05:02:43.764014: ctags_bin: dart_ctags
+1970-01-02 05:02:43.764050: ctags_args (is a string):  -l 
+1970-01-02 05:02:43.764148: Escaped ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/6.dart'
+1970-01-02 05:02:43.764199: Executing ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/6.dart'
+1970-01-02 05:02:43.998514: Executing command: "'/bin/bash' '-c' ''dart_ctags'  -l  '/tmp/nvimeRRN7Z/6.dart''"
+1970-01-02 05:02:43.998599: Exit code: 66
+1970-01-02 05:02:44.011525: Command output:
+1970-01-02 05:02:44.011574: Could not find a file named "pubspec.yaml" in "/home/han/.config/nvim/dart-ctags".
+
+1970-01-02 05:02:44.011617: Exit code: 66
+             1970-01-02 05:02:44.011844: Ctags error when processing file
+1970-01-02 05:02:44.011946: fileinfo empty after processing [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:44.022511: AutoUpdate called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:44.022599: Vim filetype: 'dart', sanitized filetype: 'dart'
+1970-01-02 05:02:44.022672: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:44.022857: File data outdated, updating [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:44.022933: ProcessFile called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:44.023005: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:44.023869: typeinfo for file to process: {'ctagstype': 'dart', 'ftype': 'dart', 'kinddict': {'C': 8, 'D': 3, 'E': 11, 'F': 10, 'L': 5, 'M': 23, 'P': 6, 'U': 4, 'a': 20, 'c': 14, 'd': 15, 'e': 12, 'f': 21, 'g': 24, 'i': 2, 'l': 0, 'm': 22, 'n': 18, 'o': 26, 'p': 7, 'r': 19, 's': 25, 't': 1, 'v': 9, 'w': 16, 'x': 13, 'z': 17, '?': 27}, 'ctagsargs': '-l', 'sro': ':', 'createKinddict': function('<SNR>112_createKinddict'), 'getKind': function('<SNR>112_getKind'), 'kind2scope': {'c': 'class', 'E': 'enum', 'x': 'mixin', 'i': 'directive', '?': 'unknown'}, 'ctagsbin': 'dart_ctags', 'scope2kind': {'enum': 'E', 'class': 'c', 'directive': 'i', 'mixin': 'x'}, 'kinds': [{'short': 'l', 'long': 'library', 'fold': 0, 'stl': 0}, {'short': 't', 'long': 'export', 'fold': 0, 'stl': 0}, {'short': 'i', 'long': 'imports', 'fold': 1, 'stl': 0}, {'short': 'D', 'long': 'dart', 'fold': 0, 'stl': 0}, {'short': 'U', 'long': 'pub', 'fold': 0, 'stl': 0}, {'short': 'L', 'long': 'local', 'fold': 0, 'stl': 0}, {'short': 'P', 'long': 'part', 'fold': 0, 'stl': 0}, {'short': 'p', 'long': 'part of', 'fold': 0, 'stl': 0}, {'short': 'C', 'long': 'consts', 'fold': 0, 'stl': 0}, {'short': 'v', 'long': 'variables', 'fold': 0, 'stl': 0}, {'short': 'F', 'long': 'functions', 'fold': 0, 'stl': 0}, {'short': 'E', 'long': 'enums', 'fold': 0, 'stl': 0}, {'short': 'e', 'long': 'constants', 'fold': 0, 'stl': 0}, {'short': 'x', 'long': 'mixins', 'fold': 0, 'stl': 0}, {'short': 'c', 'long': 'classes', 'fold': 0, 'stl': 0}, {'short': 'd', 'long': 'extends', 'fold': 0, 'stl': 0}, {'short': 'w', 'long': 'with', 'fold': 0, 'stl': 0}, {'short': 'z', 'long': 'implements', 'fold': 0, 'stl': 0}, {'short': 'n', 'long': 'on', 'fold': 0, 'stl': 0}, {'short': 'r', 'long': 'constructors', 'fold': 0, 'stl': 0}, {'short': 'a', 'long': 'abstract functions', 'fold': 0, 'stl': 0}, {'short': 'f', 'long': 'fields', 'fold': 0, 'stl': 0}, {'short': 'm', 'long': 'methods', 'fold': 0, 'stl': 0}, {'short': 'M', 'long': 'static methods', 'fold': 0, 'stl': 0}, {'short': 'g', 'long': 'getters', 'fold': 0, 'stl': 0}, {'short': 's', 'long': 'setters', 'fold': 0, 'stl': 0}, {'short': 'o', 'long': 'operators', 'fold': 0, 'stl': 0}, {'short': '?', 'long': 'unknown', 'fold': 0, 'stl': 1}]}
+1970-01-02 05:02:44.024082: Caching file into: /tmp/nvimeRRN7Z/7.dart
+1970-01-02 05:02:44.024234: ExecuteCtagsOnFile called [/tmp/nvimeRRN7Z/7.dart]
+1970-01-02 05:02:44.024437: EscapeCtagsCmd called
+1970-01-02 05:02:44.024509: ctags_bin: dart_ctags
+1970-01-02 05:02:44.024579: ctags_args (is a string):  -l 
+1970-01-02 05:02:44.024757: Escaped ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/7.dart'
+1970-01-02 05:02:44.024855: Executing ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/7.dart'
+1970-01-02 05:02:44.261372: Executing command: "'/bin/bash' '-c' ''dart_ctags'  -l  '/tmp/nvimeRRN7Z/7.dart''"
+1970-01-02 05:02:44.261452: Exit code: 66
+1970-01-02 05:02:44.273910: Command output:
+1970-01-02 05:02:44.273953: Could not find a file named "pubspec.yaml" in "/home/han/.config/nvim/dart-ctags".
+
+1970-01-02 05:02:44.274022: Exit code: 66
+1970-01-02 05:02:44.274180: Ctags error when processing file
+1970-01-02 05:02:44.274298: fileinfo empty after processing [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:44.274634: OpenWindow finished
+1970-01-02 05:02:44.274691: ToggleWindow finished
+1970-01-02 05:02:44.583576: AutoUpdate called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:44.584101: Vim filetype: 'dart', sanitized filetype: 'dart'
+1970-01-02 05:02:44.584463: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:44.585372: File data outdated, updating [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:44.585735: ProcessFile called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:44.586140: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:44.588281: typeinfo for file to process: {'ctagstype': 'dart', 'ftype': 'dart', 'kinddict': {'C': 8, 'D': 3, 'E': 11, 'F': 10, 'L': 5, 'M': 23, 'P': 6, 'U': 4, 'a': 20, 'c': 14, 'd': 15, 'e': 12, 'f': 21, 'g': 24, 'i': 2, 'l': 0, 'm': 22, 'n': 18, 'o': 26, 'p': 7, 'r': 19, 's': 25, 't': 1, 'v': 9, 'w': 16, 'x': 13, 'z': 17, '?': 27}, 'ctagsargs': '-l', 'sro': ':', 'createKinddict': function('<SNR>112_createKinddict'), 'getKind': function('<SNR>112_getKind'), 'kind2scope': {'c': 'class', 'E': 'enum', 'x': 'mixin', 'i': 'directive', '?': 'unknown'}, 'ctagsbin': 'dart_ctags', 'scope2kind': {'enum': 'E', 'class': 'c', 'directive': 'i', 'mixin': 'x'}, 'kinds': [{'short': 'l', 'long': 'library', 'fold': 0, 'stl': 0}, {'short': 't', 'long': 'export', 'fold': 0, 'stl': 0}, {'short': 'i', 'long': 'imports', 'fold': 1, 'stl': 0}, {'short': 'D', 'long': 'dart', 'fold': 0, 'stl': 0}, {'short': 'U', 'long': 'pub', 'fold': 0, 'stl': 0}, {'short': 'L', 'long': 'local', 'fold': 0, 'stl': 0}, {'short': 'P', 'long': 'part', 'fold': 0, 'stl': 0}, {'short': 'p', 'long': 'part of', 'fold': 0, 'stl': 0}, {'short': 'C', 'long': 'consts', 'fold': 0, 'stl': 0}, {'short': 'v', 'long': 'variables', 'fold': 0, 'stl': 0}, {'short': 'F', 'long': 'functions', 'fold': 0, 'stl': 0}, {'short': 'E', 'long': 'enums', 'fold': 0, 'stl': 0}, {'short': 'e', 'long': 'constants', 'fold': 0, 'stl': 0}, {'short': 'x', 'long': 'mixins', 'fold': 0, 'stl': 0}, {'short': 'c', 'long': 'classes', 'fold': 0, 'stl': 0}, {'short': 'd', 'long': 'extends', 'fold': 0, 'stl': 0}, {'short': 'w', 'long': 'with', 'fold': 0, 'stl': 0}, {'short': 'z', 'long': 'implements', 'fold': 0, 'stl': 0}, {'short': 'n', 'long': 'on', 'fold': 0, 'stl': 0}, {'short': 'r', 'long': 'constructors', 'fold': 0, 'stl': 0}, {'short': 'a', 'long': 'abstract functions', 'fold': 0, 'stl': 0}, {'short': 'f', 'long': 'fields', 'fold': 0, 'stl': 0}, {'short': 'm', 'long': 'methods', 'fold': 0, 'stl': 0}, {'short': 'M', 'long': 'static methods', 'fold': 0, 'stl': 0}, {'short': 'g', 'long': 'getters', 'fold': 0, 'stl': 0}, {'short': 's', 'long': 'setters', 'fold': 0, 'stl': 0}, {'short': 'o', 'long': 'operators', 'fold': 0, 'stl': 0}, {'short': '?', 'long': 'unknown', 'fold': 0, 'stl': 1}]}
+1970-01-02 05:02:44.588459: Caching file into: /tmp/nvimeRRN7Z/8.dart
+1970-01-02 05:02:44.588615: ExecuteCtagsOnFile called [/tmp/nvimeRRN7Z/8.dart]
+1970-01-02 05:02:44.588811: EscapeCtagsCmd called
+1970-01-02 05:02:44.588878: ctags_bin: dart_ctags
+1970-01-02 05:02:44.588941: ctags_args (is a string):  -l 
+1970-01-02 05:02:44.589101: Escaped ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/8.dart'
+1970-01-02 05:02:44.589184: Executing ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/8.dart'
+1970-01-02 05:02:44.810951: Executing command: "'/bin/bash' '-c' ''dart_ctags'  -l  '/tmp/nvimeRRN7Z/8.dart''"
+1970-01-02 05:02:44.811033: Exit code: 66
+1970-01-02 05:02:44.813319: Command output:
+1970-01-02 05:02:44.813388: Could not find a file named "pubspec.yaml" in "/home/han/.config/nvim/dart-ctags".
+
+1970-01-02 05:02:44.813427: Exit code: 66
+1970-01-02 05:02:44.813530: Ctags error when processing file
+1970-01-02 05:02:44.813633: fileinfo empty after processing [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:46.065108: ToggleWindow called
+1970-01-02 05:02:46.065559: CloseWindow called
+1970-01-02 05:02:46.066457: goto_win(): 2wincmd w, 0
+1970-01-02 05:02:46.106583: AutoUpdate called [/home/han/.config/nvim/__Tagbar__.1]
+1970-01-02 05:02:46.106732: In Tagbar window, stopping processing
+1970-01-02 05:02:46.120149: AutoUpdate called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:46.120243: Vim filetype: 'dart', sanitized filetype: 'dart'
+1970-01-02 05:02:46.120293: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:46.120423: File data outdated, updating [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:46.120472: ProcessFile called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:46.120518: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:46.121029: typeinfo for file to process: {'ctagstype': 'dart', 'ftype': 'dart', 'kinddict': {'C': 8, 'D': 3, 'E': 11, 'F': 10, 'L': 5, 'M': 23, 'P': 6, 'U': 4, 'a': 20, 'c': 14, 'd': 15, 'e': 12, 'f': 21, 'g': 24, 'i': 2, 'l': 0, 'm': 22, 'n': 18, 'o': 26, 'p': 7, 'r': 19, 's': 25, 't': 1, 'v': 9, 'w': 16, 'x': 13, 'z': 17, '?': 27}, 'ctagsargs': '-l', 'sro': ':', 'createKinddict': function('<SNR>112_createKinddict'), 'getKind': function('<SNR>112_getKind'), 'kind2scope': {'c': 'class', 'E': 'enum', 'x': 'mixin', 'i': 'directive', '?': 'unknown'}, 'ctagsbin': 'dart_ctags', 'scope2kind': {'enum': 'E', 'class': 'c', 'directive': 'i', 'mixin': 'x'}, 'kinds': [{'short': 'l', 'long': 'library', 'fold': 0, 'stl': 0}, {'short': 't', 'long': 'export', 'fold': 0, 'stl': 0}, {'short': 'i', 'long': 'imports', 'fold': 1, 'stl': 0}, {'short': 'D', 'long': 'dart', 'fold': 0, 'stl': 0}, {'short': 'U', 'long': 'pub', 'fold': 0, 'stl': 0}, {'short': 'L', 'long': 'local', 'fold': 0, 'stl': 0}, {'short': 'P', 'long': 'part', 'fold': 0, 'stl': 0}, {'short': 'p', 'long': 'part of', 'fold': 0, 'stl': 0}, {'short': 'C', 'long': 'consts', 'fold': 0, 'stl': 0}, {'short': 'v', 'long': 'variables', 'fold': 0, 'stl': 0}, {'short': 'F', 'long': 'functions', 'fold': 0, 'stl': 0}, {'short': 'E', 'long': 'enums', 'fold': 0, 'stl': 0}, {'short': 'e', 'long': 'constants', 'fold': 0, 'stl': 0}, {'short': 'x', 'long': 'mixins', 'fold': 0, 'stl': 0}, {'short': 'c', 'long': 'classes', 'fold': 0, 'stl': 0}, {'short': 'd', 'long': 'extends', 'fold': 0, 'stl': 0}, {'short': 'w', 'long': 'with', 'fold': 0, 'stl': 0}, {'short': 'z', 'long': 'implements', 'fold': 0, 'stl': 0}, {'short': 'n', 'long': 'on', 'fold': 0, 'stl': 0}, {'short': 'r', 'long': 'constructors', 'fold': 0, 'stl': 0}, {'short': 'a', 'long': 'abstract functions', 'fold': 0, 'stl': 0}, {'short': 'f', 'long': 'fields', 'fold': 0, 'stl': 0}, {'short': 'm', 'long': 'methods', 'fold': 0, 'stl': 0}, {'short': 'M', 'long': 'static methods', 'fold': 0, 'stl': 0}, {'short': 'g', 'long': 'getters', 'fold': 0, 'stl': 0}, {'short': 's', 'long': 'setters', 'fold': 0, 'stl': 0}, {'short': 'o', 'long': 'operators', 'fold': 0, 'stl': 0}, {'short': '?', 'long': 'unknown', 'fold': 0, 'stl': 1}]}
+1970-01-02 05:02:46.121156: Caching file into: /tmp/nvimeRRN7Z/9.dart
+1970-01-02 05:02:46.121255: ExecuteCtagsOnFile called [/tmp/nvimeRRN7Z/9.dart]
+1970-01-02 05:02:46.121381: EscapeCtagsCmd called
+1970-01-02 05:02:46.121427: ctags_bin: dart_ctags
+1970-01-02 05:02:46.121469: ctags_args (is a string):  -l 
+1970-01-02 05:02:46.121583: Escaped ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/9.dart'
+1970-01-02 05:02:46.121639: Executing ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/9.dart'
+1970-01-02 05:02:46.339273: Executing command: "'/bin/bash' '-c' ''dart_ctags'  -l  '/tmp/nvimeRRN7Z/9.dart''"
+1970-01-02 05:02:46.339354: Exit code: 66
+1970-01-02 05:02:46.355422: Command output:
+1970-01-02 05:02:46.355479: Could not find a file named "pubspec.yaml" in "/home/han/.config/nvim/dart-ctags".
+
+1970-01-02 05:02:46.355519: Exit code: 66
+1970-01-02 05:02:46.355616: Ctags error when processing file
+1970-01-02 05:02:46.355717: fileinfo empty after processing [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:46.355867: goto_win(): 1wincmd w, 0
+1970-01-02 05:02:46.355935: CloseWindow finished
+1970-01-02 05:02:46.663817: AutoUpdate called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:46.664251: Vim filetype: 'dart', sanitized filetype: 'dart'
+1970-01-02 05:02:46.664482: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:46.665053: File data outdated, updating [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:46.665272: ProcessFile called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:46.665478: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:02:46.667750: typeinfo for file to process: {'ctagstype': 'dart', 'ftype': 'dart', 'kinddict': {'C': 8, 'D': 3, 'E': 11, 'F': 10, 'L': 5, 'M': 23, 'P': 6, 'U': 4, 'a': 20, 'c': 14, 'd': 15, 'e': 12, 'f': 21, 'g': 24, 'i': 2, 'l': 0, 'm': 22, 'n': 18, 'o': 26, 'p': 7, 'r': 19, 's': 25, 't': 1, 'v': 9, 'w': 16, 'x': 13, 'z': 17, '?': 27}, 'ctagsargs': '-l', 'sro': ':', 'createKinddict': function('<SNR>112_createKinddict'), 'getKind': function('<SNR>112_getKind'), 'kind2scope': {'c': 'class', 'E': 'enum', 'x': 'mixin', 'i': 'directive', '?': 'unknown'}, 'ctagsbin': 'dart_ctags', 'scope2kind': {'enum': 'E', 'class': 'c', 'directive': 'i', 'mixin': 'x'}, 'kinds': [{'short': 'l', 'long': 'library', 'fold': 0, 'stl': 0}, {'short': 't', 'long': 'export', 'fold': 0, 'stl': 0}, {'short': 'i', 'long': 'imports', 'fold': 1, 'stl': 0}, {'short': 'D', 'long': 'dart', 'fold': 0, 'stl': 0}, {'short': 'U', 'long': 'pub', 'fold': 0, 'stl': 0}, {'short': 'L', 'long': 'local', 'fold': 0, 'stl': 0}, {'short': 'P', 'long': 'part', 'fold': 0, 'stl': 0}, {'short': 'p', 'long': 'part of', 'fold': 0, 'stl': 0}, {'short': 'C', 'long': 'consts', 'fold': 0, 'stl': 0}, {'short': 'v', 'long': 'variables', 'fold': 0, 'stl': 0}, {'short': 'F', 'long': 'functions', 'fold': 0, 'stl': 0}, {'short': 'E', 'long': 'enums', 'fold': 0, 'stl': 0}, {'short': 'e', 'long': 'constants', 'fold': 0, 'stl': 0}, {'short': 'x', 'long': 'mixins', 'fold': 0, 'stl': 0}, {'short': 'c', 'long': 'classes', 'fold': 0, 'stl': 0}, {'short': 'd', 'long': 'extends', 'fold': 0, 'stl': 0}, {'short': 'w', 'long': 'with', 'fold': 0, 'stl': 0}, {'short': 'z', 'long': 'implements', 'fold': 0, 'stl': 0}, {'short': 'n', 'long': 'on', 'fold': 0, 'stl': 0}, {'short': 'r', 'long': 'constructors', 'fold': 0, 'stl': 0}, {'short': 'a', 'long': 'abstract functions', 'fold': 0, 'stl': 0}, {'short': 'f', 'long': 'fields', 'fold': 0, 'stl': 0}, {'short': 'm', 'long': 'methods', 'fold': 0, 'stl': 0}, {'short': 'M', 'long': 'static methods', 'fold': 0, 'stl': 0}, {'short': 'g', 'long': 'getters', 'fold': 0, 'stl': 0}, {'short': 's', 'long': 'setters', 'fold': 0, 'stl': 0}, {'short': 'o', 'long': 'operators', 'fold': 0, 'stl': 0}, {'short': '?', 'long': 'unknown', 'fold': 0, 'stl': 1}]}
+1970-01-02 05:02:46.667867: Caching file into: /tmp/nvimeRRN7Z/10.dart
+1970-01-02 05:02:46.667958: ExecuteCtagsOnFile called [/tmp/nvimeRRN7Z/10.dart]
+1970-01-02 05:02:46.668085: EscapeCtagsCmd called
+1970-01-02 05:02:46.668137: ctags_bin: dart_ctags
+1970-01-02 05:02:46.668199: ctags_args (is a string):  -l 
+1970-01-02 05:02:46.668298: Escaped ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/10.dart'
+1970-01-02 05:02:46.668352: Executing ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/10.dart'
+1970-01-02 05:02:46.894252: Executing command: "'/bin/bash' '-c' ''dart_ctags'  -l  '/tmp/nvimeRRN7Z/10.dart''"
+1970-01-02 05:02:46.894335: Exit code: 66
+1970-01-02 05:02:46.897276: Command output:
+1970-01-02 05:02:46.897344: Could not find a file named "pubspec.yaml" in "/home/han/.config/nvim/dart-ctags".
+
+1970-01-02 05:02:46.897385: Exit code: 66
+1970-01-02 05:02:46.897478: Ctags error when processing file
+1970-01-02 05:02:46.897584: fileinfo empty after processing [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:02.296422: AutoUpdate called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:02.296871: Vim filetype: 'dart', sanitized filetype: 'dart'
+1970-01-02 05:05:02.297099: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:02.297671: File data outdated, updating [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:02.297943: ProcessFile called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:02.298164: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:02.300238: typeinfo for file to process: {'ctagstype': 'dart', 'ftype': 'dart', 'kinddict': {'C': 8, 'D': 3, 'E': 11, 'F': 10, 'L': 5, 'M': 23, 'P': 6, 'U': 4, 'a': 20, 'c': 14, 'd': 15, 'e': 12, 'f': 21, 'g': 24, 'i': 2, 'l': 0, 'm': 22, 'n': 18, 'o': 26, 'p': 7, 'r': 19, 's': 25, 't': 1, 'v': 9, 'w': 16, 'x': 13, 'z': 17, '?': 27}, 'ctagsargs': '-l', 'sro': ':', 'createKinddict': function('<SNR>112_createKinddict'), 'getKind': function('<SNR>112_getKind'), 'kind2scope': {'c': 'class', 'E': 'enum', 'x': 'mixin', 'i': 'directive', '?': 'unknown'}, 'ctagsbin': 'dart_ctags', 'scope2kind': {'enum': 'E', 'class': 'c', 'directive': 'i', 'mixin': 'x'}, 'kinds': [{'short': 'l', 'long': 'library', 'fold': 0, 'stl': 0}, {'short': 't', 'long': 'export', 'fold': 0, 'stl': 0}, {'short': 'i', 'long': 'imports', 'fold': 1, 'stl': 0}, {'short': 'D', 'long': 'dart', 'fold': 0, 'stl': 0}, {'short': 'U', 'long': 'pub', 'fold': 0, 'stl': 0}, {'short': 'L', 'long': 'local', 'fold': 0, 'stl': 0}, {'short': 'P', 'long': 'part', 'fold': 0, 'stl': 0}, {'short': 'p', 'long': 'part of', 'fold': 0, 'stl': 0}, {'short': 'C', 'long': 'consts', 'fold': 0, 'stl': 0}, {'short': 'v', 'long': 'variables', 'fold': 0, 'stl': 0}, {'short': 'F', 'long': 'functions', 'fold': 0, 'stl': 0}, {'short': 'E', 'long': 'enums', 'fold': 0, 'stl': 0}, {'short': 'e', 'long': 'constants', 'fold': 0, 'stl': 0}, {'short': 'x', 'long': 'mixins', 'fold': 0, 'stl': 0}, {'short': 'c', 'long': 'classes', 'fold': 0, 'stl': 0}, {'short': 'd', 'long': 'extends', 'fold': 0, 'stl': 0}, {'short': 'w', 'long': 'with', 'fold': 0, 'stl': 0}, {'short': 'z', 'long': 'implements', 'fold': 0, 'stl': 0}, {'short': 'n', 'long': 'on', 'fold': 0, 'stl': 0}, {'short': 'r', 'long': 'constructors', 'fold': 0, 'stl': 0}, {'short': 'a', 'long': 'abstract functions', 'fold': 0, 'stl': 0}, {'short': 'f', 'long': 'fields', 'fold': 0, 'stl': 0}, {'short': 'm', 'long': 'methods', 'fold': 0, 'stl': 0}, {'short': 'M', 'long': 'static methods', 'fold': 0, 'stl': 0}, {'short': 'g', 'long': 'getters', 'fold': 0, 'stl': 0}, {'short': 's', 'long': 'setters', 'fold': 0, 'stl': 0}, {'short': 'o', 'long': 'operators', 'fold': 0, 'stl': 0}, {'short': '?', 'long': 'unknown', 'fold': 0, 'stl': 1}]}
+1970-01-02 05:05:02.300369: Caching file into: /tmp/nvimeRRN7Z/11.dart
+1970-01-02 05:05:02.300461: ExecuteCtagsOnFile called [/tmp/nvimeRRN7Z/11.dart]
+1970-01-02 05:05:02.300579: EscapeCtagsCmd called
+1970-01-02 05:05:02.300617: ctags_bin: dart_ctags
+1970-01-02 05:05:02.300653: ctags_args (is a string):  -l 
+1970-01-02 05:05:02.300752: Escaped ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/11.dart'
+1970-01-02 05:05:02.300802: Executing ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/11.dart'
+1970-01-02 05:05:02.554348: Executing command: "'/bin/bash' '-c' ''dart_ctags'  -l  '/tmp/nvimeRRN7Z/11.dart''"
+1970-01-02 05:05:02.554440: Exit code: 66
+1970-01-02 05:05:02.557104: Command output:
+1970-01-02 05:05:02.557156: Could not find a file named "pubspec.yaml" in "/home/.pub-cache/bin/dart_ctags".
+
+1970-01-02 05:05:02.557213: Exit code: 66
+1970-01-02 05:05:02.557319: Ctags error when processing file
+1970-01-02 05:05:02.557442: fileinfo empty after processing [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:02.561619: ToggleWindow called
+1970-01-02 05:05:02.561704: OpenWindow called with flags: ''
+1970-01-02 05:05:02.572689: AutoUpdate called [/home/han/.config/nvim/__Tagbar__.1]
+1970-01-02 05:05:02.572764: Still opening window, stopping processing
+1970-01-02 05:05:02.581724: InitWindow called with autoclose: 0
+1970-01-02 05:05:02.584263: AutoUpdate called [/home/han/.config/nvim/__Tagbar__.1]
+1970-01-02 05:05:02.584343: In Tagbar window, stopping processing
+1970-01-02 05:05:02.586771: InitWindow finished
+1970-01-02 05:05:02.586851: Removing fileinfo for [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:02.586908: AutoUpdate called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:02.586987: Vim filetype: 'dart', sanitized filetype: 'dart'
+1970-01-02 05:05:02.587052: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:02.587171: New file, processing [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:02.587217: ProcessFile called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:02.587271: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:02.587849: typeinfo for file to process: {'ctagstype': 'dart', 'ftype': 'dart', 'kinddict': {'C': 8, 'D': 3, 'E': 11, 'F': 10, 'L': 5, 'M': 23, 'P': 6, 'U': 4, 'a': 20, 'c': 14, 'd': 15, 'e': 12, 'f': 21, 'g': 24, 'i': 2, 'l': 0, 'm': 22, 'n': 18, 'o': 26, 'p': 7, 'r': 19, 's': 25, 't': 1, 'v': 9, 'w': 16, 'x': 13, 'z': 17, '?': 27}, 'ctagsargs': '-l', 'sro': ':', 'createKinddict': function('<SNR>112_createKinddict'), 'getKind': function('<SNR>112_getKind'), 'kind2scope': {'c': 'class', 'E': 'enum', 'x': 'mixin', 'i': 'directive', '?': 'unknown'}, 'ctagsbin': 'dart_ctags', 'scope2kind': {'enum': 'E', 'class': 'c', 'directive': 'i', 'mixin': 'x'}, 'kinds': [{'short': 'l', 'long': 'library', 'fold': 0, 'stl': 0}, {'short': 't', 'long': 'export', 'fold': 0, 'stl': 0}, {'short': 'i', 'long': 'imports', 'fold': 1, 'stl': 0}, {'short': 'D', 'long': 'dart', 'fold': 0, 'stl': 0}, {'short': 'U', 'long': 'pub', 'fold': 0, 'stl': 0}, {'short': 'L', 'long': 'local', 'fold': 0, 'stl': 0}, {'short': 'P', 'long': 'part', 'fold': 0, 'stl': 0}, {'short': 'p', 'long': 'part of', 'fold': 0, 'stl': 0}, {'short': 'C', 'long': 'consts', 'fold': 0, 'stl': 0}, {'short': 'v', 'long': 'variables', 'fold': 0, 'stl': 0}, {'short': 'F', 'long': 'functions', 'fold': 0, 'stl': 0}, {'short': 'E', 'long': 'enums', 'fold': 0, 'stl': 0}, {'short': 'e', 'long': 'constants', 'fold': 0, 'stl': 0}, {'short': 'x', 'long': 'mixins', 'fold': 0, 'stl': 0}, {'short': 'c', 'long': 'classes', 'fold': 0, 'stl': 0}, {'short': 'd', 'long': 'extends', 'fold': 0, 'stl': 0}, {'short': 'w', 'long': 'with', 'fold': 0, 'stl': 0}, {'short': 'z', 'long': 'implements', 'fold': 0, 'stl': 0}, {'short': 'n', 'long': 'on', 'fold': 0, 'stl': 0}, {'short': 'r', 'long': 'constructors', 'fold': 0, 'stl': 0}, {'short': 'a', 'long': 'abstract functions', 'fold': 0, 'stl': 0}, {'short': 'f', 'long': 'fields', 'fold': 0, 'stl': 0}, {'short': 'm', 'long': 'methods', 'fold': 0, 'stl': 0}, {'short': 'M', 'long': 'static methods', 'fold': 0, 'stl': 0}, {'short': 'g', 'long': 'getters', 'fold': 0, 'stl': 0}, {'short': 's', 'long': 'setters', 'fold': 0, 'stl': 0}, {'short': 'o', 'long': 'operators', 'fold': 0, 'stl': 0}, {'short': '?', 'long': 'unknown', 'fold': 0, 'stl': 1}]}
+1970-01-02 05:05:02.588015: Caching file into: /tmp/nvimeRRN7Z/12.dart
+1970-01-02 05:05:02.588117: ExecuteCtagsOnFile called [/tmp/nvimeRRN7Z/12.dart]
+1970-01-02 05:05:02.588250: EscapeCtagsCmd called
+1970-01-02 05:05:02.588294: ctags_bin: dart_ctags
+1970-01-02 05:05:02.588344: ctags_args (is a string):  -l 
+1970-01-02 05:05:02.588459: Escaped ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/12.dart'
+1970-01-02 05:05:02.588517: Executing ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/12.dart'
+1970-01-02 05:05:02.807230: Executing command: "'/bin/bash' '-c' ''dart_ctags'  -l  '/tmp/nvimeRRN7Z/12.dart''"
+1970-01-02 05:05:02.807345: Exit code: 66
+1970-01-02 05:05:02.826412: Command output:
+1970-01-02 05:05:02.826461: Could not find a file named "pubspec.yaml" in "/home/.pub-cache/bin/dart_ctags".
+
+1970-01-02 05:05:02.826498: Exit code: 66
+             1970-01-02 05:05:02.826751: Ctags error when processing file
+1970-01-02 05:05:02.826846: fileinfo empty after processing [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:02.836742: AutoUpdate called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:02.836829: Vim filetype: 'dart', sanitized filetype: 'dart'
+1970-01-02 05:05:02.836896: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:02.837026: File data outdated, updating [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:02.837066: ProcessFile called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:02.837104: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:02.837576: typeinfo for file to process: {'ctagstype': 'dart', 'ftype': 'dart', 'kinddict': {'C': 8, 'D': 3, 'E': 11, 'F': 10, 'L': 5, 'M': 23, 'P': 6, 'U': 4, 'a': 20, 'c': 14, 'd': 15, 'e': 12, 'f': 21, 'g': 24, 'i': 2, 'l': 0, 'm': 22, 'n': 18, 'o': 26, 'p': 7, 'r': 19, 's': 25, 't': 1, 'v': 9, 'w': 16, 'x': 13, 'z': 17, '?': 27}, 'ctagsargs': '-l', 'sro': ':', 'createKinddict': function('<SNR>112_createKinddict'), 'getKind': function('<SNR>112_getKind'), 'kind2scope': {'c': 'class', 'E': 'enum', 'x': 'mixin', 'i': 'directive', '?': 'unknown'}, 'ctagsbin': 'dart_ctags', 'scope2kind': {'enum': 'E', 'class': 'c', 'directive': 'i', 'mixin': 'x'}, 'kinds': [{'short': 'l', 'long': 'library', 'fold': 0, 'stl': 0}, {'short': 't', 'long': 'export', 'fold': 0, 'stl': 0}, {'short': 'i', 'long': 'imports', 'fold': 1, 'stl': 0}, {'short': 'D', 'long': 'dart', 'fold': 0, 'stl': 0}, {'short': 'U', 'long': 'pub', 'fold': 0, 'stl': 0}, {'short': 'L', 'long': 'local', 'fold': 0, 'stl': 0}, {'short': 'P', 'long': 'part', 'fold': 0, 'stl': 0}, {'short': 'p', 'long': 'part of', 'fold': 0, 'stl': 0}, {'short': 'C', 'long': 'consts', 'fold': 0, 'stl': 0}, {'short': 'v', 'long': 'variables', 'fold': 0, 'stl': 0}, {'short': 'F', 'long': 'functions', 'fold': 0, 'stl': 0}, {'short': 'E', 'long': 'enums', 'fold': 0, 'stl': 0}, {'short': 'e', 'long': 'constants', 'fold': 0, 'stl': 0}, {'short': 'x', 'long': 'mixins', 'fold': 0, 'stl': 0}, {'short': 'c', 'long': 'classes', 'fold': 0, 'stl': 0}, {'short': 'd', 'long': 'extends', 'fold': 0, 'stl': 0}, {'short': 'w', 'long': 'with', 'fold': 0, 'stl': 0}, {'short': 'z', 'long': 'implements', 'fold': 0, 'stl': 0}, {'short': 'n', 'long': 'on', 'fold': 0, 'stl': 0}, {'short': 'r', 'long': 'constructors', 'fold': 0, 'stl': 0}, {'short': 'a', 'long': 'abstract functions', 'fold': 0, 'stl': 0}, {'short': 'f', 'long': 'fields', 'fold': 0, 'stl': 0}, {'short': 'm', 'long': 'methods', 'fold': 0, 'stl': 0}, {'short': 'M', 'long': 'static methods', 'fold': 0, 'stl': 0}, {'short': 'g', 'long': 'getters', 'fold': 0, 'stl': 0}, {'short': 's', 'long': 'setters', 'fold': 0, 'stl': 0}, {'short': 'o', 'long': 'operators', 'fold': 0, 'stl': 0}, {'short': '?', 'long': 'unknown', 'fold': 0, 'stl': 1}]}
+1970-01-02 05:05:02.837707: Caching file into: /tmp/nvimeRRN7Z/13.dart
+1970-01-02 05:05:02.837801: ExecuteCtagsOnFile called [/tmp/nvimeRRN7Z/13.dart]
+1970-01-02 05:05:02.837926: EscapeCtagsCmd called
+1970-01-02 05:05:02.837966: ctags_bin: dart_ctags
+1970-01-02 05:05:02.838003: ctags_args (is a string):  -l 
+1970-01-02 05:05:02.838105: Escaped ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/13.dart'
+1970-01-02 05:05:02.838156: Executing ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/13.dart'
+1970-01-02 05:05:03.080127: Executing command: "'/bin/bash' '-c' ''dart_ctags'  -l  '/tmp/nvimeRRN7Z/13.dart''"
+1970-01-02 05:05:03.080207: Exit code: 66
+1970-01-02 05:05:03.093191: Command output:
+1970-01-02 05:05:03.093234: Could not find a file named "pubspec.yaml" in "/home/.pub-cache/bin/dart_ctags".
+
+1970-01-02 05:05:03.093279: Exit code: 66
+1970-01-02 05:05:03.093380: Ctags error when processing file
+1970-01-02 05:05:03.093515: fileinfo empty after processing [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:03.093836: OpenWindow finished
+1970-01-02 05:05:03.093882: ToggleWindow finished
+1970-01-02 05:05:03.401023: AutoUpdate called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:03.401462: Vim filetype: 'dart', sanitized filetype: 'dart'
+1970-01-02 05:05:03.401694: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:03.402304: File data outdated, updating [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:03.402530: ProcessFile called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:03.402737: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:03.405133: typeinfo for file to process: {'ctagstype': 'dart', 'ftype': 'dart', 'kinddict': {'C': 8, 'D': 3, 'E': 11, 'F': 10, 'L': 5, 'M': 23, 'P': 6, 'U': 4, 'a': 20, 'c': 14, 'd': 15, 'e': 12, 'f': 21, 'g': 24, 'i': 2, 'l': 0, 'm': 22, 'n': 18, 'o': 26, 'p': 7, 'r': 19, 's': 25, 't': 1, 'v': 9, 'w': 16, 'x': 13, 'z': 17, '?': 27}, 'ctagsargs': '-l', 'sro': ':', 'createKinddict': function('<SNR>112_createKinddict'), 'getKind': function('<SNR>112_getKind'), 'kind2scope': {'c': 'class', 'E': 'enum', 'x': 'mixin', 'i': 'directive', '?': 'unknown'}, 'ctagsbin': 'dart_ctags', 'scope2kind': {'enum': 'E', 'class': 'c', 'directive': 'i', 'mixin': 'x'}, 'kinds': [{'short': 'l', 'long': 'library', 'fold': 0, 'stl': 0}, {'short': 't', 'long': 'export', 'fold': 0, 'stl': 0}, {'short': 'i', 'long': 'imports', 'fold': 1, 'stl': 0}, {'short': 'D', 'long': 'dart', 'fold': 0, 'stl': 0}, {'short': 'U', 'long': 'pub', 'fold': 0, 'stl': 0}, {'short': 'L', 'long': 'local', 'fold': 0, 'stl': 0}, {'short': 'P', 'long': 'part', 'fold': 0, 'stl': 0}, {'short': 'p', 'long': 'part of', 'fold': 0, 'stl': 0}, {'short': 'C', 'long': 'consts', 'fold': 0, 'stl': 0}, {'short': 'v', 'long': 'variables', 'fold': 0, 'stl': 0}, {'short': 'F', 'long': 'functions', 'fold': 0, 'stl': 0}, {'short': 'E', 'long': 'enums', 'fold': 0, 'stl': 0}, {'short': 'e', 'long': 'constants', 'fold': 0, 'stl': 0}, {'short': 'x', 'long': 'mixins', 'fold': 0, 'stl': 0}, {'short': 'c', 'long': 'classes', 'fold': 0, 'stl': 0}, {'short': 'd', 'long': 'extends', 'fold': 0, 'stl': 0}, {'short': 'w', 'long': 'with', 'fold': 0, 'stl': 0}, {'short': 'z', 'long': 'implements', 'fold': 0, 'stl': 0}, {'short': 'n', 'long': 'on', 'fold': 0, 'stl': 0}, {'short': 'r', 'long': 'constructors', 'fold': 0, 'stl': 0}, {'short': 'a', 'long': 'abstract functions', 'fold': 0, 'stl': 0}, {'short': 'f', 'long': 'fields', 'fold': 0, 'stl': 0}, {'short': 'm', 'long': 'methods', 'fold': 0, 'stl': 0}, {'short': 'M', 'long': 'static methods', 'fold': 0, 'stl': 0}, {'short': 'g', 'long': 'getters', 'fold': 0, 'stl': 0}, {'short': 's', 'long': 'setters', 'fold': 0, 'stl': 0}, {'short': 'o', 'long': 'operators', 'fold': 0, 'stl': 0}, {'short': '?', 'long': 'unknown', 'fold': 0, 'stl': 1}]}
+1970-01-02 05:05:03.405280: Caching file into: /tmp/nvimeRRN7Z/14.dart
+1970-01-02 05:05:03.405372: ExecuteCtagsOnFile called [/tmp/nvimeRRN7Z/14.dart]
+1970-01-02 05:05:03.405528: EscapeCtagsCmd called
+1970-01-02 05:05:03.405580: ctags_bin: dart_ctags
+1970-01-02 05:05:03.405644: ctags_args (is a string):  -l 
+1970-01-02 05:05:03.405743: Escaped ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/14.dart'
+1970-01-02 05:05:03.405792: Executing ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/14.dart'
+1970-01-02 05:05:03.639026: Executing command: "'/bin/bash' '-c' ''dart_ctags'  -l  '/tmp/nvimeRRN7Z/14.dart''"
+1970-01-02 05:05:03.639114: Exit code: 66
+1970-01-02 05:05:03.641525: Command output:
+1970-01-02 05:05:03.641570: Could not find a file named "pubspec.yaml" in "/home/.pub-cache/bin/dart_ctags".
+
+1970-01-02 05:05:03.641612: Exit code: 66
+1970-01-02 05:05:03.641724: Ctags error when processing file
+1970-01-02 05:05:03.641845: fileinfo empty after processing [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:03.645970: ToggleWindow called
+1970-01-02 05:05:03.646045: CloseWindow called
+1970-01-02 05:05:03.646163: goto_win(): 2wincmd w, 0
+1970-01-02 05:05:03.658463: AutoUpdate called [/home/han/.config/nvim/__Tagbar__.1]
+1970-01-02 05:05:03.658559: In Tagbar window, stopping processing
+1970-01-02 05:05:03.669165: AutoUpdate called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:03.669250: Vim filetype: 'dart', sanitized filetype: 'dart'
+1970-01-02 05:05:03.669292: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:03.669399: File data outdated, updating [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:03.669443: ProcessFile called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:03.669483: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:03.669998: typeinfo for file to process: {'ctagstype': 'dart', 'ftype': 'dart', 'kinddict': {'C': 8, 'D': 3, 'E': 11, 'F': 10, 'L': 5, 'M': 23, 'P': 6, 'U': 4, 'a': 20, 'c': 14, 'd': 15, 'e': 12, 'f': 21, 'g': 24, 'i': 2, 'l': 0, 'm': 22, 'n': 18, 'o': 26, 'p': 7, 'r': 19, 's': 25, 't': 1, 'v': 9, 'w': 16, 'x': 13, 'z': 17, '?': 27}, 'ctagsargs': '-l', 'sro': ':', 'createKinddict': function('<SNR>112_createKinddict'), 'getKind': function('<SNR>112_getKind'), 'kind2scope': {'c': 'class', 'E': 'enum', 'x': 'mixin', 'i': 'directive', '?': 'unknown'}, 'ctagsbin': 'dart_ctags', 'scope2kind': {'enum': 'E', 'class': 'c', 'directive': 'i', 'mixin': 'x'}, 'kinds': [{'short': 'l', 'long': 'library', 'fold': 0, 'stl': 0}, {'short': 't', 'long': 'export', 'fold': 0, 'stl': 0}, {'short': 'i', 'long': 'imports', 'fold': 1, 'stl': 0}, {'short': 'D', 'long': 'dart', 'fold': 0, 'stl': 0}, {'short': 'U', 'long': 'pub', 'fold': 0, 'stl': 0}, {'short': 'L', 'long': 'local', 'fold': 0, 'stl': 0}, {'short': 'P', 'long': 'part', 'fold': 0, 'stl': 0}, {'short': 'p', 'long': 'part of', 'fold': 0, 'stl': 0}, {'short': 'C', 'long': 'consts', 'fold': 0, 'stl': 0}, {'short': 'v', 'long': 'variables', 'fold': 0, 'stl': 0}, {'short': 'F', 'long': 'functions', 'fold': 0, 'stl': 0}, {'short': 'E', 'long': 'enums', 'fold': 0, 'stl': 0}, {'short': 'e', 'long': 'constants', 'fold': 0, 'stl': 0}, {'short': 'x', 'long': 'mixins', 'fold': 0, 'stl': 0}, {'short': 'c', 'long': 'classes', 'fold': 0, 'stl': 0}, {'short': 'd', 'long': 'extends', 'fold': 0, 'stl': 0}, {'short': 'w', 'long': 'with', 'fold': 0, 'stl': 0}, {'short': 'z', 'long': 'implements', 'fold': 0, 'stl': 0}, {'short': 'n', 'long': 'on', 'fold': 0, 'stl': 0}, {'short': 'r', 'long': 'constructors', 'fold': 0, 'stl': 0}, {'short': 'a', 'long': 'abstract functions', 'fold': 0, 'stl': 0}, {'short': 'f', 'long': 'fields', 'fold': 0, 'stl': 0}, {'short': 'm', 'long': 'methods', 'fold': 0, 'stl': 0}, {'short': 'M', 'long': 'static methods', 'fold': 0, 'stl': 0}, {'short': 'g', 'long': 'getters', 'fold': 0, 'stl': 0}, {'short': 's', 'long': 'setters', 'fold': 0, 'stl': 0}, {'short': 'o', 'long': 'operators', 'fold': 0, 'stl': 0}, {'short': '?', 'long': 'unknown', 'fold': 0, 'stl': 1}]}
+1970-01-02 05:05:03.670116: Caching file into: /tmp/nvimeRRN7Z/15.dart
+1970-01-02 05:05:03.670210: ExecuteCtagsOnFile called [/tmp/nvimeRRN7Z/15.dart]
+1970-01-02 05:05:03.670325: EscapeCtagsCmd called
+1970-01-02 05:05:03.670364: ctags_bin: dart_ctags
+1970-01-02 05:05:03.670403: ctags_args (is a string):  -l 
+1970-01-02 05:05:03.670508: Escaped ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/15.dart'
+1970-01-02 05:05:03.670560: Executing ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/15.dart'
+1970-01-02 05:05:03.887768: Executing command: "'/bin/bash' '-c' ''dart_ctags'  -l  '/tmp/nvimeRRN7Z/15.dart''"
+1970-01-02 05:05:03.887842: Exit code: 66
+1970-01-02 05:05:03.900942: Command output:
+1970-01-02 05:05:03.900986: Could not find a file named "pubspec.yaml" in "/home/.pub-cache/bin/dart_ctags".
+
+1970-01-02 05:05:03.901074: Exit code: 66
+1970-01-02 05:05:03.901167: Ctags error when processing file
+1970-01-02 05:05:03.901264: fileinfo empty after processing [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:03.901431: goto_win(): 1wincmd w, 0
+1970-01-02 05:05:03.901497: CloseWindow finished
+1970-01-02 05:05:04.208589: AutoUpdate called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:04.209022: Vim filetype: 'dart', sanitized filetype: 'dart'
+1970-01-02 05:05:04.209252: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:04.209855: File data outdated, updating [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:04.210084: ProcessFile called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:04.210296: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:04.212736: typeinfo for file to process: {'ctagstype': 'dart', 'ftype': 'dart', 'kinddict': {'C': 8, 'D': 3, 'E': 11, 'F': 10, 'L': 5, 'M': 23, 'P': 6, 'U': 4, 'a': 20, 'c': 14, 'd': 15, 'e': 12, 'f': 21, 'g': 24, 'i': 2, 'l': 0, 'm': 22, 'n': 18, 'o': 26, 'p': 7, 'r': 19, 's': 25, 't': 1, 'v': 9, 'w': 16, 'x': 13, 'z': 17, '?': 27}, 'ctagsargs': '-l', 'sro': ':', 'createKinddict': function('<SNR>112_createKinddict'), 'getKind': function('<SNR>112_getKind'), 'kind2scope': {'c': 'class', 'E': 'enum', 'x': 'mixin', 'i': 'directive', '?': 'unknown'}, 'ctagsbin': 'dart_ctags', 'scope2kind': {'enum': 'E', 'class': 'c', 'directive': 'i', 'mixin': 'x'}, 'kinds': [{'short': 'l', 'long': 'library', 'fold': 0, 'stl': 0}, {'short': 't', 'long': 'export', 'fold': 0, 'stl': 0}, {'short': 'i', 'long': 'imports', 'fold': 1, 'stl': 0}, {'short': 'D', 'long': 'dart', 'fold': 0, 'stl': 0}, {'short': 'U', 'long': 'pub', 'fold': 0, 'stl': 0}, {'short': 'L', 'long': 'local', 'fold': 0, 'stl': 0}, {'short': 'P', 'long': 'part', 'fold': 0, 'stl': 0}, {'short': 'p', 'long': 'part of', 'fold': 0, 'stl': 0}, {'short': 'C', 'long': 'consts', 'fold': 0, 'stl': 0}, {'short': 'v', 'long': 'variables', 'fold': 0, 'stl': 0}, {'short': 'F', 'long': 'functions', 'fold': 0, 'stl': 0}, {'short': 'E', 'long': 'enums', 'fold': 0, 'stl': 0}, {'short': 'e', 'long': 'constants', 'fold': 0, 'stl': 0}, {'short': 'x', 'long': 'mixins', 'fold': 0, 'stl': 0}, {'short': 'c', 'long': 'classes', 'fold': 0, 'stl': 0}, {'short': 'd', 'long': 'extends', 'fold': 0, 'stl': 0}, {'short': 'w', 'long': 'with', 'fold': 0, 'stl': 0}, {'short': 'z', 'long': 'implements', 'fold': 0, 'stl': 0}, {'short': 'n', 'long': 'on', 'fold': 0, 'stl': 0}, {'short': 'r', 'long': 'constructors', 'fold': 0, 'stl': 0}, {'short': 'a', 'long': 'abstract functions', 'fold': 0, 'stl': 0}, {'short': 'f', 'long': 'fields', 'fold': 0, 'stl': 0}, {'short': 'm', 'long': 'methods', 'fold': 0, 'stl': 0}, {'short': 'M', 'long': 'static methods', 'fold': 0, 'stl': 0}, {'short': 'g', 'long': 'getters', 'fold': 0, 'stl': 0}, {'short': 's', 'long': 'setters', 'fold': 0, 'stl': 0}, {'short': 'o', 'long': 'operators', 'fold': 0, 'stl': 0}, {'short': '?', 'long': 'unknown', 'fold': 0, 'stl': 1}]}
+1970-01-02 05:05:04.213154: Caching file into: /tmp/nvimeRRN7Z/16.dart
+1970-01-02 05:05:04.213242: ExecuteCtagsOnFile called [/tmp/nvimeRRN7Z/16.dart]
+1970-01-02 05:05:04.213358: EscapeCtagsCmd called
+1970-01-02 05:05:04.213395: ctags_bin: dart_ctags
+1970-01-02 05:05:04.213431: ctags_args (is a string):  -l 
+1970-01-02 05:05:04.213530: Escaped ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/16.dart'
+1970-01-02 05:05:04.213581: Executing ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/16.dart'
+1970-01-02 05:05:04.444224: Executing command: "'/bin/bash' '-c' ''dart_ctags'  -l  '/tmp/nvimeRRN7Z/16.dart''"
+1970-01-02 05:05:04.444309: Exit code: 66
+1970-01-02 05:05:04.446439: Command output:
+1970-01-02 05:05:04.446497: Could not find a file named "pubspec.yaml" in "/home/.pub-cache/bin/dart_ctags".
+
+1970-01-02 05:05:04.446565: Exit code: 66
+1970-01-02 05:05:04.446691: Ctags error when processing file
+1970-01-02 05:05:04.446795: fileinfo empty after processing [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:04.450617: ToggleWindow called
+1970-01-02 05:05:04.450687: OpenWindow called with flags: ''
+1970-01-02 05:05:04.460540: AutoUpdate called [/home/han/.config/nvim/__Tagbar__.1]
+1970-01-02 05:05:04.460596: Still opening window, stopping processing
+1970-01-02 05:05:04.468691: InitWindow called with autoclose: 0
+1970-01-02 05:05:04.470762: AutoUpdate called [/home/han/.config/nvim/__Tagbar__.1]
+1970-01-02 05:05:04.470831: In Tagbar window, stopping processing
+1970-01-02 05:05:04.472940: InitWindow finished
+1970-01-02 05:05:04.472998: Removing fileinfo for [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:04.473043: AutoUpdate called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:04.473109: Vim filetype: 'dart', sanitized filetype: 'dart'
+1970-01-02 05:05:04.473149: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:04.473256: New file, processing [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:04.473295: ProcessFile called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:04.473361: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:04.473852: typeinfo for file to process: {'ctagstype': 'dart', 'ftype': 'dart', 'kinddict': {'C': 8, 'D': 3, 'E': 11, 'F': 10, 'L': 5, 'M': 23, 'P': 6, 'U': 4, 'a': 20, 'c': 14, 'd': 15, 'e': 12, 'f': 21, 'g': 24, 'i': 2, 'l': 0, 'm': 22, 'n': 18, 'o': 26, 'p': 7, 'r': 19, 's': 25, 't': 1, 'v': 9, 'w': 16, 'x': 13, 'z': 17, '?': 27}, 'ctagsargs': '-l', 'sro': ':', 'createKinddict': function('<SNR>112_createKinddict'), 'getKind': function('<SNR>112_getKind'), 'kind2scope': {'c': 'class', 'E': 'enum', 'x': 'mixin', 'i': 'directive', '?': 'unknown'}, 'ctagsbin': 'dart_ctags', 'scope2kind': {'enum': 'E', 'class': 'c', 'directive': 'i', 'mixin': 'x'}, 'kinds': [{'short': 'l', 'long': 'library', 'fold': 0, 'stl': 0}, {'short': 't', 'long': 'export', 'fold': 0, 'stl': 0}, {'short': 'i', 'long': 'imports', 'fold': 1, 'stl': 0}, {'short': 'D', 'long': 'dart', 'fold': 0, 'stl': 0}, {'short': 'U', 'long': 'pub', 'fold': 0, 'stl': 0}, {'short': 'L', 'long': 'local', 'fold': 0, 'stl': 0}, {'short': 'P', 'long': 'part', 'fold': 0, 'stl': 0}, {'short': 'p', 'long': 'part of', 'fold': 0, 'stl': 0}, {'short': 'C', 'long': 'consts', 'fold': 0, 'stl': 0}, {'short': 'v', 'long': 'variables', 'fold': 0, 'stl': 0}, {'short': 'F', 'long': 'functions', 'fold': 0, 'stl': 0}, {'short': 'E', 'long': 'enums', 'fold': 0, 'stl': 0}, {'short': 'e', 'long': 'constants', 'fold': 0, 'stl': 0}, {'short': 'x', 'long': 'mixins', 'fold': 0, 'stl': 0}, {'short': 'c', 'long': 'classes', 'fold': 0, 'stl': 0}, {'short': 'd', 'long': 'extends', 'fold': 0, 'stl': 0}, {'short': 'w', 'long': 'with', 'fold': 0, 'stl': 0}, {'short': 'z', 'long': 'implements', 'fold': 0, 'stl': 0}, {'short': 'n', 'long': 'on', 'fold': 0, 'stl': 0}, {'short': 'r', 'long': 'constructors', 'fold': 0, 'stl': 0}, {'short': 'a', 'long': 'abstract functions', 'fold': 0, 'stl': 0}, {'short': 'f', 'long': 'fields', 'fold': 0, 'stl': 0}, {'short': 'm', 'long': 'methods', 'fold': 0, 'stl': 0}, {'short': 'M', 'long': 'static methods', 'fold': 0, 'stl': 0}, {'short': 'g', 'long': 'getters', 'fold': 0, 'stl': 0}, {'short': 's', 'long': 'setters', 'fold': 0, 'stl': 0}, {'short': 'o', 'long': 'operators', 'fold': 0, 'stl': 0}, {'short': '?', 'long': 'unknown', 'fold': 0, 'stl': 1}]}
+1970-01-02 05:05:04.473986: Caching file into: /tmp/nvimeRRN7Z/17.dart
+1970-01-02 05:05:04.474076: ExecuteCtagsOnFile called [/tmp/nvimeRRN7Z/17.dart]
+1970-01-02 05:05:04.474224: EscapeCtagsCmd called
+1970-01-02 05:05:04.474281: ctags_bin: dart_ctags
+1970-01-02 05:05:04.474319: ctags_args (is a string):  -l 
+1970-01-02 05:05:04.474422: Escaped ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/17.dart'
+1970-01-02 05:05:04.474475: Executing ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/17.dart'
+1970-01-02 05:05:04.707473: Executing command: "'/bin/bash' '-c' ''dart_ctags'  -l  '/tmp/nvimeRRN7Z/17.dart''"
+1970-01-02 05:05:04.707560: Exit code: 66
+1970-01-02 05:05:04.719485: Command output:
+1970-01-02 05:05:04.719561: Could not find a file named "pubspec.yaml" in "/home/.pub-cache/bin/dart_ctags".
+
+1970-01-02 05:05:04.719628: Exit code: 66
+             1970-01-02 05:05:04.719890: Ctags error when processing file
+1970-01-02 05:05:04.720002: fileinfo empty after processing [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:04.729777: AutoUpdate called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:04.729895: Vim filetype: 'dart', sanitized filetype: 'dart'
+1970-01-02 05:05:04.729937: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:04.730041: File data outdated, updating [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:04.730080: ProcessFile called [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:04.730119: Checking if file is valid [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:04.730683: typeinfo for file to process: {'ctagstype': 'dart', 'ftype': 'dart', 'kinddict': {'C': 8, 'D': 3, 'E': 11, 'F': 10, 'L': 5, 'M': 23, 'P': 6, 'U': 4, 'a': 20, 'c': 14, 'd': 15, 'e': 12, 'f': 21, 'g': 24, 'i': 2, 'l': 0, 'm': 22, 'n': 18, 'o': 26, 'p': 7, 'r': 19, 's': 25, 't': 1, 'v': 9, 'w': 16, 'x': 13, 'z': 17, '?': 27}, 'ctagsargs': '-l', 'sro': ':', 'createKinddict': function('<SNR>112_createKinddict'), 'getKind': function('<SNR>112_getKind'), 'kind2scope': {'c': 'class', 'E': 'enum', 'x': 'mixin', 'i': 'directive', '?': 'unknown'}, 'ctagsbin': 'dart_ctags', 'scope2kind': {'enum': 'E', 'class': 'c', 'directive': 'i', 'mixin': 'x'}, 'kinds': [{'short': 'l', 'long': 'library', 'fold': 0, 'stl': 0}, {'short': 't', 'long': 'export', 'fold': 0, 'stl': 0}, {'short': 'i', 'long': 'imports', 'fold': 1, 'stl': 0}, {'short': 'D', 'long': 'dart', 'fold': 0, 'stl': 0}, {'short': 'U', 'long': 'pub', 'fold': 0, 'stl': 0}, {'short': 'L', 'long': 'local', 'fold': 0, 'stl': 0}, {'short': 'P', 'long': 'part', 'fold': 0, 'stl': 0}, {'short': 'p', 'long': 'part of', 'fold': 0, 'stl': 0}, {'short': 'C', 'long': 'consts', 'fold': 0, 'stl': 0}, {'short': 'v', 'long': 'variables', 'fold': 0, 'stl': 0}, {'short': 'F', 'long': 'functions', 'fold': 0, 'stl': 0}, {'short': 'E', 'long': 'enums', 'fold': 0, 'stl': 0}, {'short': 'e', 'long': 'constants', 'fold': 0, 'stl': 0}, {'short': 'x', 'long': 'mixins', 'fold': 0, 'stl': 0}, {'short': 'c', 'long': 'classes', 'fold': 0, 'stl': 0}, {'short': 'd', 'long': 'extends', 'fold': 0, 'stl': 0}, {'short': 'w', 'long': 'with', 'fold': 0, 'stl': 0}, {'short': 'z', 'long': 'implements', 'fold': 0, 'stl': 0}, {'short': 'n', 'long': 'on', 'fold': 0, 'stl': 0}, {'short': 'r', 'long': 'constructors', 'fold': 0, 'stl': 0}, {'short': 'a', 'long': 'abstract functions', 'fold': 0, 'stl': 0}, {'short': 'f', 'long': 'fields', 'fold': 0, 'stl': 0}, {'short': 'm', 'long': 'methods', 'fold': 0, 'stl': 0}, {'short': 'M', 'long': 'static methods', 'fold': 0, 'stl': 0}, {'short': 'g', 'long': 'getters', 'fold': 0, 'stl': 0}, {'short': 's', 'long': 'setters', 'fold': 0, 'stl': 0}, {'short': 'o', 'long': 'operators', 'fold': 0, 'stl': 0}, {'short': '?', 'long': 'unknown', 'fold': 0, 'stl': 1}]}
+1970-01-02 05:05:04.730801: Caching file into: /tmp/nvimeRRN7Z/18.dart
+1970-01-02 05:05:04.730921: ExecuteCtagsOnFile called [/tmp/nvimeRRN7Z/18.dart]
+1970-01-02 05:05:04.731094: EscapeCtagsCmd called
+1970-01-02 05:05:04.731133: ctags_bin: dart_ctags
+1970-01-02 05:05:04.731170: ctags_args (is a string):  -l 
+1970-01-02 05:05:04.731273: Escaped ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/18.dart'
+1970-01-02 05:05:04.731324: Executing ctags command: 'dart_ctags'  -l  '/tmp/nvimeRRN7Z/18.dart'
+1970-01-02 05:05:04.978662: Executing command: "'/bin/bash' '-c' ''dart_ctags'  -l  '/tmp/nvimeRRN7Z/18.dart''"
+1970-01-02 05:05:04.978751: Exit code: 66
+1970-01-02 05:05:04.992840: Command output:
+1970-01-02 05:05:04.992886: Could not find a file named "pubspec.yaml" in "/home/.pub-cache/bin/dart_ctags".
+
+1970-01-02 05:05:04.992927: Exit code: 66
+1970-01-02 05:05:04.993035: Ctags error when processing file
+1970-01-02 05:05:04.993136: fileinfo empty after processing [/home/han/.config/nvim/test.dart]
+1970-01-02 05:05:04.993470: OpenWindow finished
+1970-01-02 05:05:04.993515: ToggleWindow finished
+1970-01-02 05:05:05.446580: Closing Tagbar window due to QuitPre event
+1970-01-02 05:05:05.446661: goto_win(): 1wincmd w, 1
