@@ -16,11 +16,6 @@
 
 
 	
-	let extension = expand('%:e')
-		if extension=='dart'
-			set cc=80
-		endif
-
 	call plug#begin()
 
 	"Coc
@@ -46,6 +41,7 @@
 	Plug 'junegunn/fzf.vim'
 	" Plug 'preservim/tagbar'
 	Plug 'yoehwan/tagbar'
+	Plug 'yoehwan/mkpv.nvim'
 	"Theme
 	Plug 'lifepillar/vim-gruvbox8'
 	Plug 'sheerun/vim-polyglot'
@@ -127,4 +123,5 @@
 			call go#fmt#Format(-1)
 		endif
 	endfunction
+
 	
