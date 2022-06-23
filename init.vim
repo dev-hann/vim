@@ -14,21 +14,23 @@
 	set autoindent
 	set smartindent
 	set clipboard=unnamedplus
-	set spell spelllang=en_us
+	set spell
+	 
+	
 
 	call plug#begin()
 
-	"Coc
+	" Coc
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 	"Flutter
 	Plug 'dart-lang/dart-vim-plugin'
 	Plug 'thosakwe/vim-flutter'
 
-	"Golang
+	" Golang
 	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-
-	"Utils
+	
+	" Utility
 	Plug 'scrooloose/nerdtree'	
 	Plug 'preservim/nerdcommenter'
 	Plug 'blueyed/vim-diminactive'
@@ -42,7 +44,8 @@
 
 	Plug 'yoehwan/mkpv.nvim'
 	Plug 'yoehwan/tagbar'
-	"Theme
+	Plug 'yoehwan/mkpv.nvim'
+	" Theme
 	Plug 'lifepillar/vim-gruvbox8'
 	Plug 'sheerun/vim-polyglot'
 	
@@ -54,7 +57,7 @@
 	colorscheme gruvbox8_hard
    let g:airline_theme='simple'
 
-	"Coc
+	" Coc
 	nmap <silent> gd <Plug>(coc-definition)
 	nmap <silent> gy <Plug>(coc-type-definition)
 	nmap <silent> gi <Plug>(coc-implementation)
@@ -71,22 +74,22 @@
 	nnoremap <leader>fp :CocCommand flutter.pub.get<cr>
 	nnoremap <leader>df :DartFmt<CR>
 	
-	"Go
+	" Go
 	nnoremap <leader>gf :GoFmt<CR>
 	
-	"Utill
+	" Utility
 	nnoremap <F2> :NERDTreeToggle<CR>
 	nnoremap <F3> <Plug>NERDCommenterToggle<CR>
 	nmap <F6> <Plug>(coc-rename)
 	nmap <F8> :TagbarToggle<CR>
 	
 	nnoremap <C-\> :vsplit<CR>
-	"Folding
+	" Folding
 	:set foldmethod=indent
 	:set foldlevel=10
 
 
-	"Go
+	" Go
 	let g:go_highlight_operators = 1
 	let g:go_highlight_functions = 1
 	let g:go_highlight_function_parameters = 1
@@ -97,7 +100,7 @@
 	let g:go_highlight_variable_declarations = 1
 	let g:go_highlight_variable_assignments = 1
 
-	"Comment
+	" Comment
 	let g:NERDCreateDefaultMappings = 1
 	let g:NERDSpaceDelims = 1
 	let g:NERDCompactSexyComs = 1
@@ -106,17 +109,17 @@
 	let g:NERDTrimTrailingWhitespace = 1
 	let g:NERDToggleCheckAllLines = 1
 
-	"Dart
+	" Dart
 	let g:dart_style_guide = 2
 	
-	"Flutter
+	" Flutter
 	let g:flutter_autoscroll = 1
 	
 
-	"Markdown
+	" Markdown
 	" let g:auto_open_mkpv = 1
-
-	"foramt
+	
+	" format
 	nnoremap <C-M-l> :call Format()<CR>
 	function! Format()
 	let extension = expand('%:e')
@@ -127,4 +130,5 @@
 			call go#fmt#Format(-1)
 		endif
 	endfunction
+
 	
