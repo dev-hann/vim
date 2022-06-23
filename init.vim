@@ -13,13 +13,8 @@
 	set sw=3
 	set autoindent
 	set smartindent
-
-
-	
-	let extension = expand('%:e')
-		if extension=='dart'
-			set cc=80
-		endif
+	set clipboard=unnamedplus
+	set spell spelllang=en_us
 
 	call plug#begin()
 
@@ -45,7 +40,7 @@
 	Plug 'junegunn/fzf',{'do':{->fzf#install()}}
 	Plug 'junegunn/fzf.vim'
 
-	" Plug 'preservim/tagbar'
+	Plug 'yoehwan/mkpv.nvim'
 	Plug 'yoehwan/tagbar'
 	"Theme
 	Plug 'lifepillar/vim-gruvbox8'
@@ -117,6 +112,10 @@
 	"Flutter
 	let g:flutter_autoscroll = 1
 	
+
+	"Markdown
+	" let g:auto_open_mkpv = 1
+
 	"foramt
 	nnoremap <C-M-l> :call Format()<CR>
 	function! Format()
