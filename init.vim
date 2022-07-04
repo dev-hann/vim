@@ -120,7 +120,7 @@
 	" let g:auto_open_mkpv = 1
 	
 	" format
-	nnoremap <C-M-l> :call Format()<CR>
+	nnoremap <C-l> :call Format()<CR>
 	function! Format()
 	let extension = expand('%:e')
 		if extension=='dart'
