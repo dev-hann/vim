@@ -23,6 +23,9 @@
 	" Coc
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+	" C-sharp
+	Plug 'OmniSharp/omnisharp-vim'
+
 	"Flutter
 	Plug 'dart-lang/dart-vim-plugin'
 	Plug 'thosakwe/vim-flutter'
