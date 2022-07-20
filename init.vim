@@ -124,6 +124,7 @@
 	
 	" format
 	nnoremap <C-l> :call Format()<CR>
+	
 	function! Format()
 	let extension = expand('%:e')
 		if extension=='dart'
@@ -132,6 +133,10 @@
 		if extension=='go'
 			call go#fmt#Format(-1)
 		endif
+		if extension=='cs'
+			call OmniSharp#actions#format#Format()
+		endif
 	endfunction
+
 
 	
