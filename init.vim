@@ -33,6 +33,9 @@
 	" Golang
 	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 	
+	" Rust
+	Plug 'rust-lang/rust.vim'
+	
 	" Utility
 	Plug 'scrooloose/nerdtree'	
 	Plug 'preservim/nerdcommenter'
@@ -135,6 +138,9 @@
 		endif
 		if extension=='cs'
 			call OmniSharp#actions#format#Format()
+		endif
+		if extension=='rs'
+			call rustfmt#Format()
 		endif
 	endfunction
 
