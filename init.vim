@@ -47,6 +47,7 @@
 	Plug 'mg979/vim-visual-multi'
 	Plug 'junegunn/fzf',{'do':{->fzf#install()}}
 	Plug 'junegunn/fzf.vim'
+	Plug 'Yggdroot/indentLine'
 
 	Plug 'yoehwan/mkpv.nvim'
 	Plug 'yoehwan/tagbar'
