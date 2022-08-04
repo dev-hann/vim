@@ -15,8 +15,6 @@
 	set smartindent
 	set clipboard=unnamedplus
 	set spell
-	 
-	
 
 	call plug#begin()
 
@@ -68,14 +66,23 @@
    let g:airline_theme='simple'
 
 	" Coc
+  function! s:check_back_space() abort
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~ '\s'
+  endfunction
+  inoremap <silent><expr> <TAB>
+	\ coc#pum#visible() ? coc#pum#next(1):
+	\ <SID>check_back_space() ? "\<Tab>" :
+	\ coc#refresh()
+  inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 	nmap <silent> gd <Plug>(coc-definition)
 	nmap <silent> gy <Plug>(coc-type-definition)
 	nmap <silent> gi <Plug>(coc-implementation)
 	nmap <silent> gr <Plug>(coc-references)
 	xmap <leader>a  <Plug>(coc-codeaction-selected)
 	nmap <leader>a  <Plug>(coc-codeaction-selected)
-	inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-	inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+	" inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+	" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 	"Flutter
 	nnoremap <leader>fr :FlutterRun<cr>
@@ -126,7 +133,6 @@
 	let g:flutter_autoscroll = 1
 	
 	" bufferline
-	set termguicolors
 	lua require"bufferline".setup()
 
 	" Markdown
