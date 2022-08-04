@@ -49,6 +49,7 @@
 	Plug 'junegunn/fzf.vim'
 	Plug 'Yggdroot/indentLine'
 	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+	Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 
 
 	Plug 'yoehwan/mkpv.nvim'
@@ -124,6 +125,9 @@
 	" Flutter
 	let g:flutter_autoscroll = 1
 	
+	" bufferline
+	set termguicolors
+	lua require"bufferline".setup()
 
 	" Markdown
 	" let g:auto_open_mkpv = 1
