@@ -15,6 +15,7 @@
 	set smartindent
 	set clipboard=unnamedplus
 	set spell
+	set conceallevel=0
 
 	call plug#begin()
 
@@ -131,6 +132,9 @@
 	
 	" bufferline
 	lua require"bufferline".setup()
+
+	" Markdown
+	let g:indentLine_setConceal = 0
 
 	" format
 	nnoremap <C-l> :call Format()<CR>
