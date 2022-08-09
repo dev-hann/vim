@@ -49,16 +49,12 @@
 	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 	Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 
-
-	Plug 'yoehwan/mkpv.nvim'
 	Plug 'yoehwan/tagbar'
 	Plug 'yoehwan/mkpv.nvim'
 	" Theme
 	Plug 'lifepillar/vim-gruvbox8'
 	Plug 'sheerun/vim-polyglot'
 	
-	
-
 	call plug#end()
 
 
@@ -136,9 +132,6 @@
 	" bufferline
 	lua require"bufferline".setup()
 
-	" Markdown
-	" let g:auto_open_mkpv = 1
-	
 	" format
 	nnoremap <C-l> :call Format()<CR>
 	
