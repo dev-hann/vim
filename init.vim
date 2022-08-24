@@ -16,6 +16,7 @@
 	set clipboard=unnamedplus
 	set spell
 	set conceallevel=0
+	set termguicolors
 
 	call plug#begin()
 
@@ -48,6 +49,9 @@
 	Plug 'junegunn/fzf.vim'
 	Plug 'Yggdroot/indentLine'
 	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+	" Buffer Tab
+	" Plug 'ryanoasis/vim-devicons'
+	Plug 'kyazdani42/nvim-web-devicons'
 	Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 
 	Plug 'yoehwan/tagbar'
@@ -135,6 +139,8 @@
 
 	" Markdown
 	let g:indentLine_setConceal = 0
+
+	" BufferLine
 
 	" format
 	nnoremap <C-l> :call Format()<CR>
