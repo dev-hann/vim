@@ -4,14 +4,6 @@ sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get -y update 
 sudo apt-get -y upgrade
 
-# Install Ctags
-sudo apt-get -y install ctags
-git clone https://github.com/yoehwan/dart-ctags.git
-# Install dart-ctags
-cd dart_ctags
-dart pub global activate -s path .
-echo PATH=$PATH:"$HOME/.pub-cache/bin">>~/.bashrc
-
 # Install Tmux
 sudo apt install tmux
 cp .tmux.conf ~/

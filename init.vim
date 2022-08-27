@@ -17,7 +17,7 @@
 	set spell
 	set conceallevel=0
 	set termguicolors
-	set buftype=nofile
+	" set buftype=nofile
 	call plug#begin()
 
 	" Coc
