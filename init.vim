@@ -43,6 +43,7 @@
 	Plug 'junegunn/fzf.vim'
 	Plug 'Yggdroot/indentLine'
 	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+	
 	" Buffer Tab
 	Plug 'kyazdani42/nvim-web-devicons'
 	Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
@@ -143,6 +144,3 @@
 			call go#fmt#Format(-1)
 		endif
 	endfunction
-
-
-	
