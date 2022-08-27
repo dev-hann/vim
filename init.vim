@@ -23,18 +23,12 @@
 	" Coc
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-	" C-sharp
-	Plug 'OmniSharp/omnisharp-vim'
-
 	"Flutter
 	Plug 'dart-lang/dart-vim-plugin'
 	Plug 'thosakwe/vim-flutter'
 
 	" Golang
 	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-	
-	" Rust
-	Plug 'rust-lang/rust.vim'
 	
 	" Utility
 	Plug 'scrooloose/nerdtree'	
@@ -50,12 +44,9 @@
 	Plug 'Yggdroot/indentLine'
 	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 	" Buffer Tab
-	" Plug 'ryanoasis/vim-devicons'
 	Plug 'kyazdani42/nvim-web-devicons'
 	Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 
-	Plug 'yoehwan/tagbar'
-	Plug 'yoehwan/mkpv.nvim'
 	" Theme
 	Plug 'lifepillar/vim-gruvbox8'
 	Plug 'sheerun/vim-polyglot'
@@ -134,13 +125,11 @@
 	" Flutter
 	let g:flutter_autoscroll = 1
 	
-	" bufferline
+	" Bufferline
 	lua require"bufferline".setup()
 
 	" Markdown
 	let g:indentLine_setConceal = 0
-
-	" BufferLine
 
 	" format
 	nnoremap <C-l> :call Format()<CR>
@@ -152,12 +141,6 @@
 		endif
 		if extension=='go'
 			call go#fmt#Format(-1)
-		endif
-		if extension=='cs'
-			call OmniSharp#actions#format#Format()
-		endif
-		if extension=='rs'
-			call rustfmt#Format()
 		endif
 	endfunction
 
