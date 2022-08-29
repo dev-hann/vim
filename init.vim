@@ -49,13 +49,14 @@
 	Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 
 	" Theme
-	Plug 'lifepillar/vim-gruvbox8'
+	Plug 'morhetz/gruvbox'
 	Plug 'sheerun/vim-polyglot'
 	
 	call plug#end()
 
 
-	colorscheme gruvbox8_hard
+	colorscheme gruvbox
+	" let g:gruvbox_contrast_dark='hard'
    let g:airline_theme='simple'
 
 	" Coc
