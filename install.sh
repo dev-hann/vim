@@ -3,6 +3,7 @@
 sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get -y update 
 sudo apt-get -y upgrade
+sudo apt install curl git
 
 # Install Tmux
 sudo apt install tmux
