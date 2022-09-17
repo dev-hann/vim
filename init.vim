@@ -86,6 +86,9 @@
 	nnoremap <leader>fp :CocCommand flutter.pub.get<cr>
 	nnoremap <leader>df :DartFmt<CR>
 	
+	" NerdTree
+	let g:NERDTreeMinimalMenu=1
+	
 	" Go
 	nnoremap <leader>gf :GoFmt<CR>
 	
