@@ -28,3 +28,6 @@ mkdir -p "$VIM_DIR"
 cp -a ./ "$VIM_DIR"/
 echo alias vi="nvim">>~/.bashrc
 
+# Install gitmoji
+npm i -g gitmoji-cli
+
