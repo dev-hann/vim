@@ -17,6 +17,7 @@
 	set spell
 	set conceallevel=0
 	set termguicolors
+	set mouse=a
 	" set buftype=nofile
 	call plug#begin()
 
@@ -43,7 +44,7 @@
 	Plug 'junegunn/fzf.vim'
 	Plug 'Yggdroot/indentLine'
 	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-	
+	 
 	" Buffer Tab
 	Plug 'kyazdani42/nvim-web-devicons'
 	Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
