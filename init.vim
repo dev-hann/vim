@@ -44,7 +44,7 @@
 	Plug 'junegunn/fzf.vim'
 	Plug 'Yggdroot/indentLine'
 	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-	 
+	Plug 'tpope/vim-surround'
 	" Buffer Tab
 	Plug 'kyazdani42/nvim-web-devicons'
 	Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
@@ -54,7 +54,6 @@
 	Plug 'sheerun/vim-polyglot'
 	
 	call plug#end()
-
 
 	colorscheme gruvbox
 	" let g:gruvbox_contrast_dark='hard'
@@ -136,6 +135,7 @@
 
 	" Markdown
 	let g:indentLine_setConceal = 0
+
 
 	" format
 	nnoremap <C-l> :call Format()<CR>
