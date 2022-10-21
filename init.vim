@@ -18,7 +18,7 @@
 	set conceallevel=0
 	set termguicolors
 	set mouse=a
-	" set buftype=nofile
+
 	call plug#begin()
 
 	" Coc
@@ -45,6 +45,7 @@
 	Plug 'Yggdroot/indentLine'
 	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 	Plug 'tpope/vim-surround'
+
 	" Buffer Tab
 	Plug 'kyazdani42/nvim-web-devicons'
 	Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
@@ -79,18 +80,8 @@
 	" inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 	" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-	"Flutter
-	nnoremap <leader>fr :FlutterRun<cr>
-	nnoremap <leader>fs :FlutterSplit<cr>
-	nnoremap <leader>fa :FlutterAttach<cr>
-	nnoremap <leader>fp :CocCommand flutter.pub.get<cr>
-	nnoremap <leader>df :DartFmt<CR>
-	
 	" NerdTree
 	let g:NERDTreeMinimalMenu=1
-	
-	" Go
-	nnoremap <leader>gf :GoFmt<CR>
 	
 	" Utility
 	nnoremap <F2> :NERDTreeToggle<CR>
@@ -99,10 +90,6 @@
 	nmap <F8> :TagbarToggle<CR>
 	
 	nnoremap <C-\> :vsplit<CR>
-	" Folding
-	:set foldmethod=indent
-	:set foldlevel=10
-
 
 	" Go
 	let g:go_highlight_operators = 1
@@ -127,15 +114,11 @@
 	" Dart
 	let g:dart_style_guide = 2
 	
-	" Flutter
-	let g:flutter_autoscroll = 1
-	
 	" Bufferline
 	lua require"bufferline".setup()
 
 	" Markdown
 	let g:indentLine_setConceal = 0
-
 
 	" format
 	nnoremap <C-l> :call Format()<CR>
