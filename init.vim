@@ -88,9 +88,9 @@
 	let g:NERDTreeMinimalMenu=1
 	
 	" Utility
-	nnoremap <F2> :NERDTreeToggle<CR>
-	nnoremap <F3> <Plug>NERDCommenterToggle<CR>
-	nmap <F6> <Plug>(coc-rename)
+	nnoremap <leader>b :NERDTreeToggle<CR>
+	nnoremap <leader>/ <Plug>NERDCommenterToggle<CR>
+	nmap <leader>r <Plug>(coc-rename)
 	nmap <F8> :TagbarToggle<CR>
 	
 	nnoremap <C-\> :vsplit<CR>
