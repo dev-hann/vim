@@ -31,6 +31,9 @@
 	" Golang
 	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 	
+	" C#
+	Plug 'OmniSharp/omnisharp-vim'
+
 	" Utility
 	Plug 'scrooloose/nerdtree'	
 	Plug 'preservim/nerdcommenter'
@@ -45,6 +48,7 @@
 	Plug 'Yggdroot/indentLine'
 	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 	Plug 'tpope/vim-surround'
+	Plug 'preservim/tagbar'
 
 	" Buffer Tab
 	Plug 'kyazdani42/nvim-web-devicons'
@@ -131,4 +135,8 @@
 		if extension=='go'
 			call go#fmt#Format(-1)
 		endif
+		if extension=='cs'
+			call OmniSharp#actions#format#Format()
+		endif
+		
 	endfunction
