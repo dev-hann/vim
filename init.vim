@@ -40,15 +40,19 @@
 	Plug 'blueyed/vim-diminactive'
 	Plug 'jiangmiao/auto-pairs'
 	Plug 'tpope/vim-fugitive'
-	Plug 'vim-airline/vim-airline'
-	Plug 'vim-airline/vim-airline-themes'
 	Plug 'mg979/vim-visual-multi'
-	Plug 'junegunn/fzf',{'do':{->fzf#install()}}
-	Plug 'junegunn/fzf.vim'
-	Plug 'Yggdroot/indentLine'
 	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+	Plug 'Yggdroot/indentLine'
 	Plug 'tpope/vim-surround'
 	Plug 'preservim/tagbar'
+
+	" Airline
+	Plug 'vim-airline/vim-airline'
+	Plug 'vim-airline/vim-airline-themes'
+	
+	" FZF
+	Plug 'junegunn/fzf',{'do':{->fzf#install()}}
+	Plug 'junegunn/fzf.vim'
 
 	" Buffer Tab
 	Plug 'kyazdani42/nvim-web-devicons'
