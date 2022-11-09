@@ -49,7 +49,7 @@
 	" Airline
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
-	
+
 	" FZF
 	Plug 'junegunn/fzf',{'do':{->fzf#install()}}
 	Plug 'junegunn/fzf.vim'
@@ -69,6 +69,10 @@
    let g:airline_theme='simple'
 
 	" Coc
+	let g:coc_global_extensions=[
+				\'coc-flutter',
+				\'coc-go',]
+
   function! s:check_back_space() abort
     let col = col('.') - 1
     return !col || getline('.')[col - 1]  =~ '\s'
