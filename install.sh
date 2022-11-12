@@ -3,10 +3,13 @@
 sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get -y update 
 sudo apt-get -y upgrade
-sudo apt install curl git
+sudo apt install -y curl git
+
+# Install keyboard Layout
+sudo apt install -y ibus-hangul ibus-pinyin
 
 # Install Tmux
-sudo apt install tmux
+sudo apt -y install tmux
 cp .tmux.conf ~/
 # Tmux ide split Screen
 sudo mv ide /usr/bin/
