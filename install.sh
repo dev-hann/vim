@@ -12,7 +12,7 @@ sudo apt install -y ibus-hangul ibus-pinyin
 sudo apt -y install tmux
 cp .tmux.conf ~/
 # Tmux ide split Screen
-sudo mv ide /usr/bin/
+sudo cp ide /usr/bin/
 
 # Install NeoVim
 sudo apt-get -y install neovim
