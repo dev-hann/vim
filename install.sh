@@ -33,5 +33,3 @@ echo alias vi="nvim">>~/.bashrc
 
 # Install gitmoji
 npm i -g gitmoji-cli
-npm install -g gitmoji-changelog
-
